@@ -13,13 +13,19 @@ const Opinion = ({
 	isClient,
 }) => {
 	return (
-		<div className="px-[100px] flex justify-center items-end">
+		<div
+			className={`px-[100px] flex flex-row ${
+				isClient ? "flex-row-reverse" : ""
+			} justify-center items-end`}>
 			<div className={`flex`}>
 				<img
 					src={isClient ? chatbox : chatbox2}
 					alt=""
 				/>
-				<div className="flex flex-col gap-y-[15px] mt-[50px] ml-[-540px] w-[500px] text-white font-grotta font-light text-[18px]">
+				<div
+					className={`flex flex-col gap-y-[15px] mt-[50px]  ${
+						isClient ? "ml-[-520px]" : "ml-[-540px]"
+					} w-[500px] text-white font-grotta font-light text-[18px]`}>
 					<p className="italic font-extralight">"{comment}"</p>
 					<div>
 						<h1 className="text-green">
@@ -33,8 +39,8 @@ const Opinion = ({
 				</div>
 			</div>
 			<img
-				src={eli}
-				alt="eli"
+				src={profileImg}
+				alt="profileImg"
 			/>
 		</div>
 	);

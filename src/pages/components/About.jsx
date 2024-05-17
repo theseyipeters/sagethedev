@@ -48,7 +48,7 @@ const About = () => {
 		<section
 			id="about"
 			ref={ref}
-			className="bg-blue flex items-center justify-between pl-[100px] pt-[100px]">
+			className="bg-blue w-full flex items-center justify-between pl-[100px] pt-[100px]">
 			<div className="w-[600px] font-grotta flex flex-col gap-y-[15px]">
 				<motion.h1
 					variants={variantsH4}

@@ -49,8 +49,8 @@ const Experiences = () => {
 
 	return (
 		<section
-			ref={ref}
 			id="experience"
+			ref={ref}
 			className="bg-black px-[100px] py-[140px] flex flex-col items-center justify-center">
 			<div className="w-3/5 text-white font-grotta font-light text-center flex flex-col gap-y-[24px]">
 				<motion.h1

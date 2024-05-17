@@ -1,9 +1,11 @@
 import React from "react";
 import Opinion from "./Opinion";
+import eli from "../../assets/eli.svg";
+import wale from "../../assets/wale.svg";
 
 const Unfiltered = () => {
 	return (
-		<section className=" h-fit overflow-hidden  fixed relative">
+		<section className=" h-fit overflow-hidden relative">
 			<div>
 				<div className="absolute top-[4%] z-10">
 					<svg
@@ -70,10 +72,28 @@ const Unfiltered = () => {
 				<Opinion
 					firstName="Eliezer"
 					lastName={"AJAH"}
+					position="Head, Talent Development and Outsourcing"
+					company="Genesys Tech Hub"
+					comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
+					profileImg={eli}
+					isClient={false}
+				/>
+				<Opinion
+					firstName="Olawale"
+					lastName={"AJIBOYE"}
+					position="Scrum Master"
+					company="Nigeria Inter-Bank Settlement Systems PLC"
+					comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
+					profileImg={wale}
+					isClient={true}
+				/>
+				<Opinion
+					firstName="Eliezer"
+					lastName={"AJAH"}
 					position="CEO"
 					company="XYZ Corp"
 					comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-					profileImg="url_to_profile_image.jpg"
+					profileImg={eli}
 					isClient={false}
 				/>
 				<Opinion
@@ -82,26 +102,8 @@ const Unfiltered = () => {
 					position="CEO"
 					company="XYZ Corp"
 					comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-					profileImg="url_to_profile_image.jpg"
-					isClient={false}
-				/>
-				<Opinion
-					firstName="Eliezer"
-					lastName={"AJAH"}
-					position="CEO"
-					company="XYZ Corp"
-					comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-					profileImg="url_to_profile_image.jpg"
-					isClient={false}
-				/>
-				<Opinion
-					firstName="Eliezer"
-					lastName={"AJAH"}
-					position="CEO"
-					company="XYZ Corp"
-					comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-					profileImg="url_to_profile_image.jpg"
-					isClient={false}
+					profileImg={wale}
+					isClient={true}
 				/>
 			</div>
 
