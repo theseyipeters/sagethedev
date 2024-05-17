@@ -1,5 +1,6 @@
 * {
 	scroll-behavior: smooth;
+	@apply transition-colors duration-300;
 }
 
 section {
@@ -9,10 +10,25 @@ section {
 
 .navbar {
 	background: rgba(0, 0, 0, 0.52);
-	backdrop-filter: blur(35px);
+	backdrop-filter: blur(25px);
+}
+.navbar2 {
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(25px);
+}
+.navbar3 {
+	background: rgba(0, 0, 0, 0.52);
+	backdrop-filter: blur(5px);
+}
+.navbar4 {
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
 }
 .hero {
 	background-image: url(./assets/radial.svg);
+}
+.hero2 {
+	background-image: url(./assets/radial2.svg);
 }
 .blurr {
 	background-image: url(./assets/blur-1.svg);
@@ -22,5 +38,12 @@ section {
 		49.2% 49.18% at 49.43% 50.82%,
 		#0b212d 0%,
 		#040d12 100%
+	);
+}
+.radial2 {
+	background: radial-gradient(
+		49.2% 49.18% at 49.43% 50.82%,
+		#a3c3d4 0%,
+		#dcf2ff 100%
 	);
 }

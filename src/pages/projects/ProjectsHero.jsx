@@ -11,16 +11,16 @@ export default function ProjectsHero() {
 				<h1 className="text-4xl font-bold text-left">Projects.</h1>
 
 				<div className="filter flex flex-row gap-1 font-light text-sm">
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green rounded-md hover:text-blue w-fit">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
 						All
 					</div>
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green rounded-md hover:text-blue w-fit">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
 						Websites
 					</div>
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green rounded-md hover:text-blue w-fit">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
 						Applications
 					</div>
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green rounded-md hover:text-blue w-fit">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
 						Designs
 					</div>
 				</div>

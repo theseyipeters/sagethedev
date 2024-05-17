@@ -48,14 +48,14 @@ const About = () => {
 		<section
 			id="about"
 			ref={ref}
-			className="bg-blue w-full flex items-center justify-between pl-[100px] pt-[100px]">
+			className="bg-lightblue dark:bg-blue w-full flex items-center justify-between pl-[100px] pt-[100px]">
 			<div className="w-[600px] font-grotta flex flex-col gap-y-[15px]">
 				<motion.h1
 					variants={variantsH4}
 					initial="hidden"
 					animate={controlsH4}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-green text-[45px] font-medium">
+					className="text-green-2 dark:text-green-1 text-[45px] font-medium">
 					I'm Oluwaseyi Peters
 				</motion.h1>
 				<motion.p
@@ -63,7 +63,7 @@ const About = () => {
 					initial="hidden"
 					animate={controlsP}
 					transition={{ duration: 1, delay: 0.4 }}
-					className="text-white font-light">
+					className="text-blue dark:text-white font-light">
 					My growth as a Frontend Engineer has been extremely wavy, but I’ve
 					seen more crests than troughs. Your friendly neighborhood frontend
 					developer, UX architect, and JavaScript engineer. I spend my days (and
@@ -79,7 +79,7 @@ const About = () => {
 						onClick={() => {
 							window.open("https://linkedin.com/in/theseyipeters");
 						}}
-						className="flex gap-x-[5px] items-center text-green font-medium py-2 hover:underline">
+						className="flex gap-x-[5px] items-center text-green-2 dark:text-green-1 font-medium py-2 hover:underline">
 						LinkedIn{" "}
 						<svg
 							width="14"

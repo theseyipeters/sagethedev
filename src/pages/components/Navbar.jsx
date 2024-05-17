@@ -3,8 +3,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import resumePDF from "../../files/resume-dark.pdf";
 import StgIcon from "../../svgs/StgIcon";
+import ToggleSwitch from "../../svgs/ToggleSwitch";
 
-const Navbar = () => {
+const Navbar = ({ setDarkMode, isDarkMode }) => {
 	const [background, setBackground] = useState(false);
 
 	useEffect(() => {
@@ -33,15 +34,19 @@ const Navbar = () => {
 		link.click();
 		document.body.removeChild(link);
 	};
+
+	const navbarClass = background ? (isDarkMode ? "navbar" : "navbar2") : "";
 	return (
-		<div className={`sticky top-0 ${background ? "navbar" : ""}`}>
-			<nav className="flex justify-between items-center py-[25px] px-[100px]">
-				<Link to={"/"}>
+		<div className={`sticky top-0 ${navbarClass}`}>
+			<nav className="flex justify-between items-center py-[20px] px-[100px]">
+				<Link
+					className="text-blue dark:text-white"
+					to={"/"}>
 					<StgIcon />
 				</Link>
 
 				<div className="flex items-center gap-x-[20px]">
-					<ul className="text-green font-grotta font-light flex gap-x-[25px]">
+					<ul className="text-blue dark:text-green-1 font-grotta font-normal flex gap-x-[25px]">
 						<Link
 							to={"/projects"}
 							className="cursor-pointer hover:text-white transition duration-500">
@@ -69,9 +74,9 @@ const Navbar = () => {
 						</div>
 					</ul>
 
-					<button className="font-grotta text-blue rounded-full bg-green px-[30px] py-[8px]">
-						Reach out
-					</button>
+					<div className="ml-10">
+						<ToggleSwitch setDarkMode={setDarkMode} />
+					</div>
 				</div>
 			</nav>
 		</div>

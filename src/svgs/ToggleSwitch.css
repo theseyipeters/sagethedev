@@ -1,0 +1,12 @@
+/* ToggleSwitch.css */
+svg {
+	cursor: pointer;
+}
+
+.toggle-ellipse {
+	transition: transform 0.5s linear;
+}
+
+.toggled .toggle-ellipse {
+	transform: translateX(41px);
+}

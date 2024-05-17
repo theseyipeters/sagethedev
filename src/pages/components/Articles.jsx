@@ -38,7 +38,7 @@ const Articles = () => {
 	return (
 		<section className="h-fit py-[40px] mt-[50px] flex flex-col gap-y-[40px] relative overflow-x-hidden">
 			<div className="font-grotta  text-white flex justify-between items-center ">
-				<h1 className="text-[45px] px-[100px] text-green">Resources</h1>
+				<h1 className="text-[45px] px-[100px] text-green-1">Resources</h1>
 				<div className="absolute bottom-[40%] flex justify-between w-full px-[20px] z-30">
 					<div
 						onClick={goToPreviousPage}

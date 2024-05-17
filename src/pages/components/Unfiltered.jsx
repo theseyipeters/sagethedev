@@ -2,57 +2,22 @@ import React from "react";
 import Opinion from "./Opinion";
 import eli from "../../assets/eli.svg";
 import wale from "../../assets/wale.svg";
+import DarkBlur from "../../svgs/DarkBlur";
+import LightBlur from "../../svgs/LightBlur";
+import DarkBlur2 from "../../svgs/DarkBlur2";
+import LightBlur2 from "../../svgs/LightBlur2";
 
-const Unfiltered = () => {
+const Unfiltered = ({ isDarkMode }) => {
 	return (
 		<section className=" h-fit overflow-hidden relative">
 			<div>
 				<div className="absolute top-[4%] z-10">
-					<svg
-						width="1440"
-						height="359"
-						viewBox="0 0 1440 359"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<g filter="url(#filter0_f_1846_1257)">
-							<rect
-								width="1440"
-								height="287"
-								transform="translate(0 -26)"
-								fill="#040D12"
-							/>
-						</g>
-						<defs>
-							<filter
-								id="filter0_f_1846_1257"
-								x="-97.3"
-								y="-123.3"
-								width="1634.6"
-								height="481.6"
-								filterUnits="userSpaceOnUse"
-								color-interpolation-filters="sRGB">
-								<feFlood
-									flood-opacity="0"
-									result="BackgroundImageFix"
-								/>
-								<feBlend
-									mode="normal"
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									stdDeviation="48.65"
-									result="effect1_foregroundBlur_1846_1257"
-								/>
-							</filter>
-						</defs>
-					</svg>
+					{isDarkMode ? <DarkBlur /> : <LightBlur />}
 				</div>
 
 				<div className="flex items-center justify-between px-[100px] py-[50px] sticky z-20">
-					<div className="w-[600px] font-grotta text-white font-light">
-						<h1 className="text-green text-[45px] font-medium">
+					<div className="w-[600px] font-grotta text-blue dark:text-white font-light">
+						<h1 className="text-green-2 dark:text-green-1 text-[45px] font-medium">
 							Unfiltered opinions about me
 						</h1>
 						<p>
@@ -62,14 +27,15 @@ const Unfiltered = () => {
 						</p>
 					</div>
 
-					<button className="font-grotta font-light text-green border border-green py-[12px] px-[20px] rounded-full">
-						Enter your opinion
+					<button className="font-grotta font-light text-green-2 dark:text-green-1 border border-green-2 dark:border-white py-[8px] px-[20px] rounded-full">
+						Submit your opinion
 					</button>
 				</div>
 			</div>
 
 			<div className="pt-[100px] pb-[150px] h-[800px] flex flex-col gap-y-[40px] overflow-scroll">
 				<Opinion
+					isDarkMode={isDarkMode}
 					firstName="Eliezer"
 					lastName={"AJAH"}
 					position="Head, Talent Development and Outsourcing"
@@ -79,6 +45,7 @@ const Unfiltered = () => {
 					isClient={false}
 				/>
 				<Opinion
+					// isDarkMode={isDarkMode}
 					firstName="Olawale"
 					lastName={"AJIBOYE"}
 					position="Scrum Master"
@@ -88,6 +55,7 @@ const Unfiltered = () => {
 					isClient={true}
 				/>
 				<Opinion
+					// isDarkMode={isDarkMode}
 					firstName="Eliezer"
 					lastName={"AJAH"}
 					position="CEO"
@@ -97,6 +65,7 @@ const Unfiltered = () => {
 					isClient={false}
 				/>
 				<Opinion
+					// isDarkMode={isDarkMode}
 					firstName="Eliezer"
 					lastName={"AJAH"}
 					position="CEO"
@@ -108,46 +77,7 @@ const Unfiltered = () => {
 			</div>
 
 			<div className="absolute bottom-[-7%] z-10">
-				<svg
-					width="1440"
-					height="323"
-					viewBox="0 0 1440 323"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<g filter="url(#filter0_f_1846_1258)">
-						<rect
-							width="1440"
-							height="247"
-							transform="matrix(-1 0 0 -1 1440 345)"
-							fill="#040D12"
-						/>
-					</g>
-					<defs>
-						<filter
-							id="filter0_f_1846_1258"
-							x="-97.3"
-							y="0.699997"
-							width="1634.6"
-							height="441.6"
-							filterUnits="userSpaceOnUse"
-							color-interpolation-filters="sRGB">
-							<feFlood
-								flood-opacity="0"
-								result="BackgroundImageFix"
-							/>
-							<feBlend
-								mode="normal"
-								in="SourceGraphic"
-								in2="BackgroundImageFix"
-								result="shape"
-							/>
-							<feGaussianBlur
-								stdDeviation="48.65"
-								result="effect1_foregroundBlur_1846_1258"
-							/>
-						</filter>
-					</defs>
-				</svg>
+				{isDarkMode ? <DarkBlur2 /> : <LightBlur2 />}
 			</div>
 		</section>
 	);

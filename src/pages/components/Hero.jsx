@@ -6,8 +6,9 @@ import { motion, useAnimation } from "framer-motion";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { useTransition, useSpring, animated } from "react-spring";
 import Sagethedev from "../../svgs/Sagethedev";
+import Sagethedev2 from "../../svgs/Sagethedev2";
 
-const Hero = () => {
+const Hero = ({ isDarkMode }) => {
 	const [whatsappURL, setWhatsappURL] = useState("https://wa.me/2348038564918");
 
 	const controlsH4 = useAnimation();
@@ -86,7 +87,7 @@ const Hero = () => {
 				initial="hidden"
 				animate={controlsDiv}
 				transition={{ duration: 1, delay: 0.5 }}>
-				<Sagethedev />
+				{isDarkMode ? <Sagethedev /> : <Sagethedev2 />}
 			</motion.div>
 
 			<div>
@@ -95,9 +96,9 @@ const Hero = () => {
 					initial="hidden"
 					animate={controlsDiv}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-green font-grotta text-[30px] font-medium tracking-[-2px]">
+					className="text-blue dark:text-green-1 font-grotta text-[30px] font-medium tracking-[-2px]">
 					I build{" "}
-					<span className="bg-green rounded-md text-blue py-2 px-2">
+					<span className="bg-lightorange dark:bg-green-1 rounded-md text-blue py-2 px-2">
 						{roles}
 					</span>
 				</motion.h3>
@@ -106,10 +107,10 @@ const Hero = () => {
 				variants={variantsDiv}
 				initial="hidden"
 				animate={controlsDiv}
-				className="mt-1 p-5 bg-[#f0eeee] rounded-lg"
+				className="mt-1 p-5 bg-transparent dark:bg-[#f0eeee] rounded-lg"
 				transition={{ duration: 1 }}>
 				<QRCode
-					bgColor="#fefefe"
+					bgColor={isDarkMode ? "#fefefe" : "transparent"}
 					value={whatsappURL}
 					size={180}
 				/>

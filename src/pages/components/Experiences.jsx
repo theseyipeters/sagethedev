@@ -2,12 +2,15 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import sma from "../../assets/sma.svg";
+import sma2 from "../../assets/sma2.svg";
 import ndz from "../../assets/ndz.svg";
 import genesys from "../../assets/genesys.svg";
+import genesys2 from "../../assets/genesys2.svg";
 import txe from "../../assets/txe.svg";
 
-const Experiences = () => {
+const Experiences = (isDarkMode) => {
 	const images = [sma, genesys, ndz, txe];
+	const images2 = [sma2, genesys2, ndz, txe];
 	const controlsH4 = useAnimation();
 	const controlsP = useAnimation();
 	const controlsImg = useAnimation();
@@ -51,14 +54,14 @@ const Experiences = () => {
 		<section
 			id="experience"
 			ref={ref}
-			className="bg-black px-[100px] py-[140px] flex flex-col items-center justify-center">
-			<div className="w-3/5 text-white font-grotta font-light text-center flex flex-col gap-y-[24px]">
+			className="bg-lightorange dark:bg-black px-[100px] py-[140px] flex flex-col items-center justify-center">
+			<div className="w-3/5 text-blue dark:text-white font-grotta font-light text-center flex flex-col gap-y-[24px]">
 				<motion.h1
 					variants={variantsH4}
 					initial="hidden"
 					animate={controlsH4}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-green text-[40px] font-grotta font-medium leading-[40px]">
+					className="text-blue dark:text-green-1 text-[40px] font-grotta font-medium leading-[40px]">
 					{" "}
 					I've embraced versatility and left my mark across diverse companies.
 				</motion.h1>
@@ -86,25 +89,48 @@ const Experiences = () => {
 					boundaries and delivering impactful results.
 				</motion.p>
 			</div>
-			<div className="flex w-full gap-x-[70px] justify-center items-center mt-[50px]">
-				{images.map((image, index) => (
-					<motion.img
-						key={index}
-						src={image}
-						alt={`image-${index}`}
-						initial="hidden"
-						animate={controlsP}
-						variants={{
-							hidden: { opacity: 0, y: 50 },
-							visible: {
-								opacity: 1,
-								y: 0,
-								transition: { duration: 1, delay: 0.5 },
-							},
-						}}
-					/>
-				))}
-			</div>
+
+			{isDarkMode ? (
+				<div className="flex w-full gap-x-[70px] justify-center items-center mt-[50px]">
+					{images2.map((image, index) => (
+						<motion.img
+							key={index}
+							src={image}
+							alt={`image-${index}`}
+							initial="hidden"
+							animate={controlsP}
+							variants={{
+								hidden: { opacity: 0, y: 50 },
+								visible: {
+									opacity: 1,
+									y: 0,
+									transition: { duration: 1, delay: 0.5 },
+								},
+							}}
+						/>
+					))}
+				</div>
+			) : (
+				<div className="flex w-full gap-x-[70px] justify-center items-center mt-[50px]">
+					{images.map((image, index) => (
+						<motion.img
+							key={index}
+							src={image}
+							alt={`image-${index}`}
+							initial="hidden"
+							animate={controlsP}
+							variants={{
+								hidden: { opacity: 0, y: 50 },
+								visible: {
+									opacity: 1,
+									y: 0,
+									transition: { duration: 1, delay: 0.5 },
+								},
+							}}
+						/>
+					))}
+				</div>
+			)}
 		</section>
 	);
 };
