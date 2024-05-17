@@ -3,7 +3,7 @@ import spotify from "../../assets/spotify.svg";
 
 const Playlists = () => {
 	return (
-		<section className="flex flex-col gap-y-[20px] px-[100px] py-[50px] font-grotta font-light text-white">
+		<section className="w-full flex flex-col gap-y-[20px] px-[100px] py-[50px] font-grotta font-light text-white">
 			<div>
 				<div className="flex items-center gap-x-[10px] ">
 					<h1 className="text-[45px] text-green font-medium">My Playlists</h1>

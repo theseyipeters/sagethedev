@@ -8,7 +8,7 @@ section {
 }
 
 .navbar {
-	background: rgba(255, 255, 255, 0.02);
+	background: rgba(0, 0, 0, 0.52);
 	backdrop-filter: blur(35px);
 }
 .hero {
