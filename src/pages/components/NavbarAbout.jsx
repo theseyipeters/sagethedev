@@ -6,7 +6,7 @@ import StgIcon from "../../svgs/StgIcon";
 import ToggleSwitch from "../../svgs/ToggleSwitch";
 import Home from "../../svgs/Home";
 
-const NavbarResume = ({ setDarkMode, isDarkMode }) => {
+const NavbarAbout = ({ setDarkMode, isDarkMode }) => {
 	const [background, setBackground] = useState(false);
 
 	useEffect(() => {
@@ -25,6 +25,17 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 		};
 	}, []);
 
+	const handleDownloadResume = () => {
+		const blob = new Blob([resumePDF], { type: "application/pdf" });
+		const url = URL.createObjectURL(blob);
+		const link = document.createElement("a");
+		link.href = url;
+		link.setAttribute("download", "resume.pdf");
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	};
+
 	const navbarClass = background ? (isDarkMode ? "navbar" : "navbar2") : "";
 	return (
 		<div className={`sticky top-0 ${navbarClass}`}>
@@ -42,16 +53,17 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 							className={`${isDarkMode ? "text-white" : "text-blue"}`}>
 							<Home />
 						</Link>
-						<Link
-							to={"/about"}
-							className="cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500">
-							About
-						</Link>
 
 						<Link
 							to={"/projects"}
+							// onClick={handleDownloadResume}
 							className="cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500">
 							Projects
+						</Link>
+						<Link
+							to={"/resume"}
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500">
+							Résumé
 						</Link>
 					</ul>
 
@@ -64,4 +76,4 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 	);
 };
 
-export default NavbarResume;
+export default NavbarAbout;

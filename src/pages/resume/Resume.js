@@ -10,9 +10,6 @@ export default function Resume({ isDarkMode }) {
 					className={`h-fit ${
 						isDarkMode ? "hero" : "hero2"
 					}  w-full flex items-center justify-center`}>
-					{/* <div className="fixed top-0 w-full z-50">
-						<Navbar />
-					</div> */}
 					<div className="w-full pt-[100px]">
 						<ResumeHero isDarkMode={isDarkMode} />
 					</div>

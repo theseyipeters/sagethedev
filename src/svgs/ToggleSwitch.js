@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ToggleSwitch.css"; // Import the CSS file
+import "./ToggleSwitch.css";
 
 export default function ToggleSwitch({ setDarkMode }) {
 	const [isToggled, setIsToggled] = useState(false);

@@ -1,0 +1,288 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Github2 from "../../svgs/Github2";
+import Dribble2 from "../../svgs/Dribble2";
+import ContactMe from "../contact/ContactMe";
+
+export default function AboutHero({ isDarkMode }) {
+	const mantras = [
+		{
+			quote:
+				"If you want to live a happy life, tie it to a goal, not to people or things.",
+			author: "Albert Einstein",
+		},
+		{
+			quote: "If you want the rainbow, you gotta put up with the rain.",
+			author: "Dolly Parton",
+		},
+		{
+			quote:
+				"The big lesson in life, is never be scared of anyone or anything.",
+			author: "Frank Sinatra",
+		},
+		{
+			quote:
+				"Curiosity about life in all of its aspects, I think, is still the secret of great creative people.",
+			author: "Leo Burnett",
+		},
+		{
+			quote:
+				"Your time is limited, so don’t waste it living someone else’s life.",
+			author: "Steve Jobs",
+		},
+	];
+
+	const books = [
+		{
+			title: "The 48 Laws of Power",
+			author: "Robert Greene",
+		},
+		{
+			title: "The Power of Habit: Why We Do What We Do in Life and Business",
+			author: "Charles Duhigg",
+		},
+		{
+			title: "Rich Dad, Poor Dad",
+			author: "Robert Kiyosaki",
+		},
+		{
+			title: "The Millionaire FastLane",
+			author: "M.J. DeMarco",
+		},
+		{
+			title: "Power and Influence: Beyond Formal Authority",
+			author: "John P. Kotter",
+		},
+	];
+	return (
+		<section
+			id="hero"
+			// ref={ref}
+			className="w-full flex  flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] overflow-auto">
+			<div className="w-full flex items-center justify-between">
+				<h1 className="text-4xl font-bold text-left">About.</h1>
+			</div>
+
+			<main className="w-full text-blue dark:text-white flex mt-[50px] font-grotta ">
+				<div className="flex gap-6 flex-wrap w-full">
+					<div
+						id="schedule-split-2"
+						className="flex px-2 md:px-20 w-full lg:w-full md:w-full overflow-y-scroll">
+						<div className="relative w-full mb-[30px]">
+							<ul className="space-y-10 lg:px-12 list-circle z-20 md:w-full w-full border-l-2 border-l-green-2 event-list">
+								<li
+									className={`space-y-2 px-4 md:w-full lg:w-full ${
+										isDarkMode ? "inner2" : "inner1"
+									}`}>
+									<div className="w-full flex items-center justify-between">
+										<h1 className="font-medium text-xl flex items-center gap-1">
+											My Journey into Tech
+											<span className="mt-[2px]">
+												<Github2 />
+											</span>
+										</h1>
+										<Link className="font-light text-sm underline underline-offset-2">
+											View Github
+										</Link>
+									</div>
+									<p className="md:w-2/3 lg:w-full">
+										It was 2007 and I was supposed to create my first email
+										together with my elder brother and I just sat down and
+										watched him navigate the webpage{" "}
+										<Link
+											className="underline-thick cursor-pointer font-semibold"
+											to={"https://yahoo.com"}>
+											(Yahoo.com)
+										</Link>{" "}
+										I realized that he found it difficult to locate some of the
+										elements of that webpage. In 2007, I was only 10years old
+										and I hardly knew anything about User Experience or User
+										Interface design, all I knew was the website wasn’t fine.{" "}
+										<br /> <br />
+										The only skills I remember having then and even till now was
+										music. I remember learning the Saxophone in Primary 4 and
+										going to represent my school at an annual concert that same
+										year. I was tilted towards that direction growing up because
+										I learned fast. The support from my parents towards my music
+										skills were annoyingly overwhelming to the extent that they
+										went hiring a private music lesson teacher. At this point I
+										knew I had no choice but to keep learning and become better
+										and better, still, deep down I knew I had other interests.{" "}
+										<br /> <br /> A few years went past and we got a laptop at
+										the house for business purposes and finally I knew what my
+										other interests were. I was so drawn to the idea of the
+										internet. It’s a huge place and I loved getting replies and
+										answers to everything I asked Google. Finally, I went
+										through school, studying a course I was forced into studying
+										and after coming out with a forced grade and overcoming the
+										condemnation stage of not coming out with the best grade, I
+										felt the pressure of having to start something with my life.
+										This was where it all changed for me. My elder brother (who
+										is now a Scrum Master) re-introduced me into Tech and how
+										rewarding it could be from doing something you’re already in
+										love with while also having the opportunity to be a part of
+										a world-changing force.
+									</p>
+								</li>
+								<li
+									className={`space-y-2 px-4 md:w-full lg:w-full ${
+										isDarkMode ? "inner2" : "inner1"
+									}`}>
+									<div className="w-full flex items-center justify-between">
+										<h1 className="font-medium text-xl flex items-center gap-1">
+											I Volunteer Sometimes too.
+											<span className="mt-[2px]">
+												<Dribble2 />
+											</span>
+										</h1>
+										<Link className="font-light text-sm underline underline-offset-2">
+											View Products
+										</Link>
+									</div>
+									<p className="md:w-2/3 lg:w-full">
+										Giving back to the community is important to me. I volunteer
+										as a mentor at a local coding bootcamp, helping aspiring
+										developers build their skills and confidence. It's
+										incredibly rewarding to see their progress and know I'm
+										making a positive impact.
+									</p>
+								</li>
+								<li
+									className={`space-y-2 px-4 md:w-full lg:w-full ${
+										isDarkMode ? "inner2" : "inner1"
+									}`}>
+									<div className="w-full flex items-center justify-between">
+										<h1 className="font-medium text-xl flex items-center gap-1">
+											Other Skills and Talents
+											<span className="mt-[2px]">
+												<Dribble2 />
+											</span>
+										</h1>
+										<Link className="font-light text-sm underline underline-offset-2">
+											View Products
+										</Link>
+									</div>
+									<p className="md:w-2/3 lg:w-full">
+										Aside from web development, I'm also an accomplished
+										musician. I play the guitar and have been part of a band for
+										the last 3 years. We've even released a few singles on
+										Spotify! Music helps me stay creative and brings a unique
+										rhythm to my coding sessions.
+									</p>
+								</li>
+								<li
+									className={`space-y-2 px-4 md:w-full lg:w-full ${
+										isDarkMode ? "inner2" : "inner1"
+									}`}>
+									<div className="w-full flex items-center justify-between">
+										<h1 className="font-medium text-xl flex items-center gap-1">
+											Fun Fact about Me.
+											<span className="mt-[2px]">
+												<Dribble2 />
+											</span>
+										</h1>
+										<Link className="font-light text-sm underline underline-offset-2">
+											View Products
+										</Link>
+									</div>
+									<p className="md:w-2/3 lg:w-full">
+										<span className="font-medium">I died and rose again!</span>
+										<br />
+										Did you know I once got trapped in the trunk of a car for a
+										good six to seven hours? It was one of the most harrowing
+										experiences of my life. The ordeal began when a prank went
+										horribly wrong, and I found myself locked inside, with no
+										means of escape. As the hours dragged on, the air became
+										stifling, and I could feel my strength waning. <br /> <br />
+										At some point, I must have lost consciousness, slipping into
+										a lifeless state. But then, miraculously, I suddenly
+										regained consciousness. The rush of panic and adrenaline
+										surged through me, and I knew I had to find a way out. With
+										every ounce of strength I had left, I banged on the trunk,
+										hoping someone would hear my desperate cries. <br /> <br />
+										Eventually, after hours without seeing me, My big brother
+										stepped out, and as he screamed my name, I responded with
+										the last strength I had within me by hitting, and pounding
+										the car. He noticed the commotion and called for help. When
+										they finally opened the trunk, I was weak but incredibly
+										relieved to be free. That experience taught me a lot about
+										resilience and the will to survive, and more importantly,
+										it's a story that reminds me of my purpose and how important
+										it is that I must fulfil it.
+									</p>
+								</li>
+								<li
+									className={`space-y-2 px-4 md:w-full lg:w-full ${
+										isDarkMode ? "inner2" : "inner1"
+									}`}>
+									<div className="w-full flex items-center justify-between">
+										<h1 className="font-medium text-xl flex items-center gap-1">
+											Personal Mantras or Quotes
+											<span className="mt-[2px]">
+												<Dribble2 />
+											</span>
+										</h1>
+										<Link className="font-light text-sm underline underline-offset-2">
+											View Products
+										</Link>
+									</div>
+									<p className="md:w-2/3 lg:w-full">
+										<p>
+											Here, I have some of my favorite quotes and mantras that I
+											live by. These just serve as a source of inspiration for
+											me in moments of confusion, and maybe they could help you
+											see life differently.
+										</p>
+										<br />
+										<ul className="w-full flex flex-col gap-2">
+											{mantras.map((mantra, index) => (
+												<li className="flex gap-2">
+													<p>"{mantra.quote}"</p>
+													<p className="font-medium">- {mantra.author}</p>
+												</li>
+											))}
+										</ul>
+									</p>
+								</li>
+								<li
+									className={`space-y-2 px-4 md:w-full lg:w-full ${
+										isDarkMode ? "inner2" : "inner1"
+									}`}>
+									<div className="w-full flex items-center justify-between">
+										<h1 className="font-medium text-xl flex items-center gap-1">
+											Book Recommendations
+											<span className="mt-[2px]">
+												<Dribble2 />
+											</span>
+										</h1>
+										<Link className="font-light text-sm underline underline-offset-2">
+											View Products
+										</Link>
+									</div>
+									<p className="md:w-2/3 lg:w-full">
+										<p>
+											Here are some of my favorite books on power that have
+											inspired and enlightened me over the years. Perhaps
+											they'll offer you new perspectives and ideas to empower
+											your own journey.
+										</p>
+										<br />
+										<ul className="w-full flex flex-col gap-2">
+											{books.map((book, index) => (
+												<li className="flex gap-2">
+													<p>"{book.title}"</p>
+													<p className="font-medium">- {book.author}</p>
+												</li>
+											))}
+										</ul>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</main>
+			<ContactMe />
+		</section>
+	);
+}

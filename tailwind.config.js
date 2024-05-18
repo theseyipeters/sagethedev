@@ -16,6 +16,12 @@ module.exports = {
 				lightblue: "#DCF2FF",
 				lightorange: "#DCDCDC",
 			},
+			borderWidth: {
+				0.5: "0.5px",
+				1: "1px",
+				2: "2px",
+				4: "4px",
+			},
 
 			backgroundImage: {
 				radial:

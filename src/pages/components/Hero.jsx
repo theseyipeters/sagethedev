@@ -10,6 +10,24 @@ import Sagethedev2 from "../../svgs/Sagethedev2";
 
 const Hero = ({ isDarkMode }) => {
 	const [whatsappURL, setWhatsappURL] = useState("https://wa.me/2348038564918");
+	const [size, setSize] = useState(180);
+
+	const handleResize = () => {
+		if (window.innerWidth <= 768) {
+			setSize(130);
+		} else {
+			setSize(180);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("resize", handleResize);
+		handleResize(); // Set initial size
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	const controlsH4 = useAnimation();
 	const controlsP = useAnimation();
@@ -81,11 +99,12 @@ const Hero = ({ isDarkMode }) => {
 		<section
 			id="hero"
 			ref={ref}
-			className="flex flex-col items-center pt-[50px] gap-y-[20px]">
+			className="flex flex-col items-center pt-[50px] gap-y-[10px] md:gap-y-[16px] lg:gap-y-[20px]">
 			<motion.div
 				variants={variantsDiv}
 				initial="hidden"
 				animate={controlsDiv}
+				className="w-[200px] md:w-[300px] lg:w-[400px] h-[130px] md:h-[200px] flex items-center justify-center"
 				transition={{ duration: 1, delay: 0.5 }}>
 				{isDarkMode ? <Sagethedev /> : <Sagethedev2 />}
 			</motion.div>
@@ -96,7 +115,7 @@ const Hero = ({ isDarkMode }) => {
 					initial="hidden"
 					animate={controlsDiv}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-blue dark:text-green-1 font-grotta text-[30px] font-medium tracking-[-2px]">
+					className="text-blue dark:text-green-1 font-grotta text-[20px] md:text-[25px] lg:text-[30px] font-medium tracking-[-1px] md:tracking-[-1px] lg:tracking-[-2px]">
 					I build{" "}
 					<span className="bg-lightorange dark:bg-green-1 rounded-md text-blue py-2 px-2">
 						{roles}
@@ -107,12 +126,12 @@ const Hero = ({ isDarkMode }) => {
 				variants={variantsDiv}
 				initial="hidden"
 				animate={controlsDiv}
-				className="mt-1 p-5 bg-transparent dark:bg-[#f0eeee] rounded-lg"
+				className="mt-1 p-5 bg-transparent dark:bg-[#f0eeee] rounded-lg w-[200px] flex items-center justify-center"
 				transition={{ duration: 1 }}>
 				<QRCode
 					bgColor={isDarkMode ? "#fefefe" : "transparent"}
 					value={whatsappURL}
-					size={180}
+					size={size}
 				/>
 			</motion.div>
 		</section>

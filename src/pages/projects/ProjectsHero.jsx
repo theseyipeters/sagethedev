@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Project from "./Project";
+import ContactMe from "../contact/ContactMe";
 
 export default function ProjectsHero({ isDarkMode }) {
 	return (
@@ -59,6 +60,8 @@ export default function ProjectsHero({ isDarkMode }) {
 					/>
 				</div>
 			</main>
+
+			<ContactMe />
 		</section>
 	);
 }

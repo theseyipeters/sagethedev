@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CTA = ({ isDarkMode }) => {
 	return (
@@ -15,7 +16,9 @@ const CTA = ({ isDarkMode }) => {
 					projects through collaborative facilitation
 				</p>
 				<div className="flex justify-center text-green-2 dark:text-green-1 gap-x-[15px]">
-					<button className="bg-green-2 dark:bg-green-1 px-[40px] py-[12px] rounded-full text-white dark:text-[#262626] flex items-center gap-x-[5px]">
+					<Link
+						to={"/contact"}
+						className="bg-green-2 dark:bg-green-1 px-[40px] py-[12px] rounded-full text-white dark:text-[#262626] flex items-center gap-x-[5px]">
 						<svg
 							width="21"
 							height="20"
@@ -38,7 +41,7 @@ const CTA = ({ isDarkMode }) => {
 							/>
 						</svg>
 						Send a mail
-					</button>
+					</Link>
 				</div>
 			</div>
 		</section>
