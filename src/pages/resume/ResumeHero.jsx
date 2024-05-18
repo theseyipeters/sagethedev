@@ -1,5 +1,7 @@
 import React from "react";
 import CTA from "../components/CTA";
+import { Link } from "react-router-dom";
+import ContactMe from "../contact/ContactMe";
 
 export default function ResumeHero({ isDarkMode }) {
 	const skillsArray = [
@@ -36,7 +38,7 @@ export default function ResumeHero({ isDarkMode }) {
 				</div>
 			</div>
 			<main className="w-full pt-20 font-grotta">
-				<div className="flex w-full border-t border-b border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					<div className="w-4/5">
 						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
 							Brief Bio
@@ -65,7 +67,7 @@ export default function ResumeHero({ isDarkMode }) {
 					</div>
 				</div>
 
-				<div className="flex w-full border-t border-b border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					<div className="w-4/5">
 						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
 							Experience
@@ -93,7 +95,7 @@ export default function ResumeHero({ isDarkMode }) {
 						</p>
 					</div>
 				</div>
-				<div className="flex w-full border-t border-b border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					<div className="w-2/5">
 						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
 							Skills
@@ -110,7 +112,7 @@ export default function ResumeHero({ isDarkMode }) {
 					</div>
 				</div>
 
-				<div className="flex w-full border-t border-b border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					<div className="w-2/5">
 						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
 							Roles
@@ -122,8 +124,11 @@ export default function ResumeHero({ isDarkMode }) {
 						<p>Frontend Engineer</p>
 					</div>
 				</div>
-				<CTA isDarkMode={isDarkMode} />
+				{/* <CTA isDarkMode={isDarkMode} /> */}
 			</main>
+			<div className="px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<ContactMe />
+			</div>
 		</section>
 	);
 }

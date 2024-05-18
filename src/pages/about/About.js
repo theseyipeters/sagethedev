@@ -1,9 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import ProjectsHero from "./ProjectsHero";
+import AboutHero from "./AboutHero";
 import Footer from "../components/Footer";
 
-export default function Projects({ isDarkMode }) {
+export default function About({ isDarkMode }) {
 	return (
 		<div className="bg-lightblue dark:bg-blue relative w-full overflow-hidden">
 			<div className="bg-radial2 dark:bg-radial">
@@ -15,7 +14,7 @@ export default function Projects({ isDarkMode }) {
 						<Navbar />
 					</div> */}
 					<div className="w-full pt-[100px]">
-						<ProjectsHero isDarkMode={isDarkMode} />
+						<AboutHero isDarkMode={isDarkMode} />
 					</div>
 				</div>
 				<Footer isDarkMode={isDarkMode} />

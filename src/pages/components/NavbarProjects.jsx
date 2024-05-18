@@ -41,7 +41,7 @@ const NavbarProjects = ({ setDarkMode, isDarkMode }) => {
 		<div className={`sticky top-0 ${navbarClass}`}>
 			<nav className="flex justify-between items-center py-[20px] px-[100px]">
 				<Link
-					className="text-blue dark:text-white"
+					className="text-blue dark:text-white hover:text-green-1 dark:hover:text-white transition duration-500 "
 					to={"/"}>
 					<StgIcon />
 				</Link>
@@ -55,15 +55,15 @@ const NavbarProjects = ({ setDarkMode, isDarkMode }) => {
 						</Link>
 						<Link
 							to={"/about"}
-							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500">
 							About
 						</Link>
 
-						<div
-							onClick={handleDownloadResume}
-							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
-							Resumé
-						</div>
+						<Link
+							to={"/resume"}
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500">
+							Résumé
+						</Link>
 					</ul>
 
 					<div className="ml-10">

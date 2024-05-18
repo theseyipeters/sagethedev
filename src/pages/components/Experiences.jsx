@@ -56,14 +56,14 @@ const Experiences = ({ isDarkMode }) => {
 		<section
 			id="experience"
 			ref={ref}
-			className="bg-lightorange dark:bg-black px-[100px] py-[140px] flex flex-col items-center justify-center">
-			<div className="w-3/5 text-blue dark:text-white font-grotta font-light text-center flex flex-col gap-y-[24px]">
+			className="bg-lightorange dark:bg-black py-[140px] flex flex-col items-center justify-center px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+			<div className="w-full md:w-full lg:w-4/5 xl:w-3/5 text-blue dark:text-white font-grotta font-light text-justify md:text-center lg:text-center flex flex-col gap-y-[24px]">
 				<motion.h1
 					variants={variantsH4}
 					initial="hidden"
 					animate={controlsH4}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-blue dark:text-green-1 text-[40px] font-grotta font-medium leading-[40px]">
+					className="text-blue dark:text-green-1 text-[30px] md:text-[35px] lg:text-[40px] font-grotta font-medium text-center leading-[30px] md:leading-[37px] lg:leading-[40px]">
 					{" "}
 					I've embraced versatility and left my mark across diverse companies.
 				</motion.h1>
@@ -93,43 +93,47 @@ const Experiences = ({ isDarkMode }) => {
 			</div>
 
 			{isDarkMode ? (
-				<div className="flex w-full gap-x-[70px] justify-center items-center mt-[50px]">
-					{images.map((imagee, index) => (
-						<motion.img
-							key={index}
-							src={imagee}
-							alt={`image-${index}`}
-							initial="hidden"
-							animate={controlsP}
-							variants={{
-								hidden: { opacity: 0, y: 50 },
-								visible: {
-									opacity: 1,
-									y: 0,
-									transition: { duration: 1, delay: 0.5 },
-								},
-							}}
-						/>
+				<div className="flex flex-col md:flex-col lg:flex-row w-full gap-x-[70px] gap-y-[30px] justify-center items-center mt-[50px]">
+					{images.map((image, idx) => (
+						<div className="w-full h-full flex items-center justify-center">
+							<motion.img
+								key={idx}
+								src={image}
+								alt={`image-${idx}`}
+								initial="hidden"
+								animate={controlsP}
+								variants={{
+									hidden: { opacity: 0, y: 50 },
+									visible: {
+										opacity: 1,
+										y: 0,
+										transition: { duration: 1, delay: 0.5 },
+									},
+								}}
+							/>
+						</div>
 					))}
 				</div>
 			) : (
-				<div className="flex w-full gap-x-[70px] justify-center items-center mt-[50px]">
+				<div className="flex flex-col md:flex-col lg:flex-row w-full gap-x-[70px] gap-y-[30px] justify-center items-center mt-[50px]">
 					{imagess.map((image, idx) => (
-						<motion.img
-							key={idx}
-							src={image}
-							alt={`image-${idx}`}
-							initial="hidden"
-							animate={controlsP}
-							variants={{
-								hidden: { opacity: 0, y: 50 },
-								visible: {
-									opacity: 1,
-									y: 0,
-									transition: { duration: 1, delay: 0.5 },
-								},
-							}}
-						/>
+						<div className="w-full h-full flex items-center justify-center">
+							<motion.img
+								key={idx}
+								src={image}
+								alt={`image-${idx}`}
+								initial="hidden"
+								animate={controlsP}
+								variants={{
+									hidden: { opacity: 0, y: 50 },
+									visible: {
+										opacity: 1,
+										y: 0,
+										transition: { duration: 1, delay: 0.5 },
+									},
+								}}
+							/>
+						</div>
 					))}
 				</div>
 			)}

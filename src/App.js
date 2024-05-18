@@ -7,6 +7,10 @@ import NavbarLanding from "./pages/components/NavbarLanding";
 import NavbarProjects from "./pages/components/NavbarProjects";
 import NavbarResume from "./pages/components/NavbarResume";
 import Resume from "./pages/resume/Resume";
+import About from "./pages/about/About";
+import NavbarAbout from "./pages/components/NavbarAbout";
+import NavbarContact from "./pages/components/NavbarContact";
+import Contact from "./pages/contact/Contact";
 
 function App() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -38,6 +42,14 @@ function App() {
 							path="/resume"
 							element={<Resume isDarkMode={isDarkMode} />}
 						/>
+						<Route
+							path="/about"
+							element={<About isDarkMode={isDarkMode} />}
+						/>
+						<Route
+							path="/contact"
+							element={<Contact isDarkMode={isDarkMode} />}
+						/>
 					</Routes>
 				</div>
 			</BrowserRouter>
@@ -49,6 +61,20 @@ function Navbars({ isDarkMode, setDarkMode }) {
 	const location = useLocation();
 
 	switch (location.pathname) {
+		case "/contact":
+			return (
+				<NavbarContact
+					isDarkMode={isDarkMode}
+					setDarkMode={setDarkMode}
+				/>
+			);
+		case "/about":
+			return (
+				<NavbarAbout
+					isDarkMode={isDarkMode}
+					setDarkMode={setDarkMode}
+				/>
+			);
 		case "/resume":
 			return (
 				<NavbarResume

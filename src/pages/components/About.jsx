@@ -48,14 +48,14 @@ const About = () => {
 		<section
 			id="about"
 			ref={ref}
-			className="bg-lightblue dark:bg-blue w-full flex items-center justify-between pl-[100px] pt-[100px]">
-			<div className="w-[600px] font-grotta flex flex-col gap-y-[15px]">
+			className="bg-lightblue dark:bg-blue w-full flex md:flex-col lg:flex-row flex-col items-center justify-between pt-[100px] pl-[30px] md:pl-[50px] lg:pl-[100px] 2xl:pl-[120px] ">
+			<div className="w-full md:w-full lg:w-[600px] font-grotta flex flex-col gap-y-[15px] pr-[30px] md:pr-[50px] lg:pr-[0px]">
 				<motion.h1
 					variants={variantsH4}
 					initial="hidden"
 					animate={controlsH4}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-green-2 dark:text-green-1 text-[45px] font-medium">
+					className="text-green-2 dark:text-green-1 text-[35px] md:text-[35px] lg:text-[45px] font-medium">
 					I'm Oluwaseyi Peters
 				</motion.h1>
 				<motion.p
@@ -63,7 +63,7 @@ const About = () => {
 					initial="hidden"
 					animate={controlsP}
 					transition={{ duration: 1, delay: 0.4 }}
-					className="text-blue dark:text-white font-light">
+					className="text-blue dark:text-white font-light text-sm md:text-base lg:text-base">
 					My growth as a Frontend Engineer has been extremely wavy, but I’ve
 					seen more crests than troughs. Your friendly neighborhood frontend
 					developer, UX architect, and JavaScript engineer. I spend my days (and
@@ -95,7 +95,7 @@ const About = () => {
 					</button>
 				</motion.div>
 			</div>
-			<div>
+			<div className="flex ml-auto">
 				<motion.img
 					src={seyi}
 					alt=""
