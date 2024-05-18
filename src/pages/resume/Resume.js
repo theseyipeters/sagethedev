@@ -1,22 +1,20 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import ProjectsHero from "./ProjectsHero";
+import ResumeHero from "./ResumeHero";
 import Footer from "../components/Footer";
 
-export default function Projects({ isDarkMode }) {
+export default function Resume({ isDarkMode }) {
 	return (
 		<div className="bg-lightblue dark:bg-blue relative w-full overflow-hidden">
 			<div className="bg-radial2 dark:bg-radial">
 				<div
 					className={`h-fit ${
 						isDarkMode ? "hero" : "hero2"
-					}  w-full mb-10 flex items-center justify-center`}>
+					}  w-full flex items-center justify-center`}>
 					{/* <div className="fixed top-0 w-full z-50">
 						<Navbar />
 					</div> */}
 					<div className="w-full pt-[100px]">
-						<ProjectsHero isDarkMode={isDarkMode} />
+						<ResumeHero isDarkMode={isDarkMode} />
 					</div>
 				</div>
 				<Footer isDarkMode={isDarkMode} />

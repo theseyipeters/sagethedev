@@ -5,7 +5,7 @@ import resumePDF from "../../files/resume-dark.pdf";
 import StgIcon from "../../svgs/StgIcon";
 import ToggleSwitch from "../../svgs/ToggleSwitch";
 
-const Navbar = ({ setDarkMode, isDarkMode }) => {
+const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 	const [background, setBackground] = useState(false);
 
 	useEffect(() => {
@@ -49,29 +49,30 @@ const Navbar = ({ setDarkMode, isDarkMode }) => {
 					<ul className="text-blue dark:text-green-1 font-grotta font-normal flex gap-x-[25px]">
 						<Link
 							to={"/projects"}
-							className="cursor-pointer hover:text-white transition duration-500">
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
 							Projects
 						</Link>
 						<ScrollLink
 							to="about"
 							smooth={true}
 							duration={500}
-							className="cursor-pointer hover:text-white transition duration-500">
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
 							About
 						</ScrollLink>
 						<ScrollLink
 							to="experience"
 							smooth={true}
 							duration={500}
-							className="cursor-pointer hover:text-white transition duration-500">
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
 							Experience
 						</ScrollLink>
 
-						<div
-							onClick={handleDownloadResume}
-							className="cursor-pointer hover:text-white transition duration-500">
+						<Link
+							to={"/resume"}
+							// onClick={handleDownloadResume}
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
 							Resumé
-						</div>
+						</Link>
 					</ul>
 
 					<div className="ml-10">
@@ -83,4 +84,4 @@ const Navbar = ({ setDarkMode, isDarkMode }) => {
 	);
 };
 
-export default Navbar;
+export default NavbarLanding;

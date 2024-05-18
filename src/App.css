@@ -1,5 +1,6 @@
 * {
 	scroll-behavior: smooth;
+	@apply transition-colors duration-300;
 }
 
 section {
@@ -9,10 +10,25 @@ section {
 
 .navbar {
 	background: rgba(0, 0, 0, 0.52);
-	backdrop-filter: blur(35px);
+	backdrop-filter: blur(25px);
+}
+.navbar2 {
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(25px);
+}
+.navbar3 {
+	background: rgba(0, 0, 0, 0.52);
+	backdrop-filter: blur(5px);
+}
+.navbar4 {
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
 }
 .hero {
 	background-image: url(./assets/radial.svg);
+}
+.hero2 {
+	background-image: url(./assets/radial2.svg);
 }
 .blurr {
 	background-image: url(./assets/blur-1.svg);
@@ -23,4 +39,31 @@ section {
 		#0b212d 0%,
 		#040d12 100%
 	);
+}
+.radial2 {
+	background: radial-gradient(
+		49.2% 49.18% at 49.43% 50.82%,
+		#a3c3d4 0%,
+		#dcf2ff 100%
+	);
+}
+
+.loader {
+	height: 400px; /* Adjust based on your design */
+}
+
+.spinner-border {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	border: 0.25em solid currentColor;
+	border-right-color: transparent;
+	border-radius: 50%;
+	animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+	to {
+		transform: rotate(360deg);
+	}
 }

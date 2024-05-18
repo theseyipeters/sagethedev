@@ -22,7 +22,7 @@ const Article = ({ image, title, description, link }) => {
 					</div>
 					<button
 						onClick={handleClick}
-						className="flex gap-x-[5px] items-center text-green font-grotta font-medium py-2 hover:underline">
+						className="flex gap-x-[5px] items-center text-green-1 font-grotta font-medium py-2 hover:underline">
 						Read more{" "}
 						<svg
 							width="14"

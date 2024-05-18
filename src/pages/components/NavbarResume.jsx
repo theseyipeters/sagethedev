@@ -4,8 +4,9 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import resumePDF from "../../files/resume-dark.pdf";
 import StgIcon from "../../svgs/StgIcon";
 import ToggleSwitch from "../../svgs/ToggleSwitch";
+import Home from "../../svgs/Home";
 
-const Navbar = ({ setDarkMode, isDarkMode }) => {
+const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 	const [background, setBackground] = useState(false);
 
 	useEffect(() => {
@@ -46,32 +47,24 @@ const Navbar = ({ setDarkMode, isDarkMode }) => {
 				</Link>
 
 				<div className="flex items-center gap-x-[20px]">
-					<ul className="text-blue dark:text-green-1 font-grotta font-normal flex gap-x-[25px]">
+					<ul className="text-blue dark:text-green-1 font-grotta font-normal flex gap-x-[25px] items-center">
+						<Link
+							to={"/"}
+							className={`${isDarkMode ? "text-white" : "text-blue"}`}>
+							<Home />
+						</Link>
+						<Link
+							to={"/about"}
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
+							About
+						</Link>
+
 						<Link
 							to={"/projects"}
-							className="cursor-pointer hover:text-white transition duration-500">
+							// onClick={handleDownloadResume}
+							className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
 							Projects
 						</Link>
-						<ScrollLink
-							to="about"
-							smooth={true}
-							duration={500}
-							className="cursor-pointer hover:text-white transition duration-500">
-							About
-						</ScrollLink>
-						<ScrollLink
-							to="experience"
-							smooth={true}
-							duration={500}
-							className="cursor-pointer hover:text-white transition duration-500">
-							Experience
-						</ScrollLink>
-
-						<div
-							onClick={handleDownloadResume}
-							className="cursor-pointer hover:text-white transition duration-500">
-							Resumé
-						</div>
 					</ul>
 
 					<div className="ml-10">
@@ -83,4 +76,4 @@ const Navbar = ({ setDarkMode, isDarkMode }) => {
 	);
 };
 
-export default Navbar;
+export default NavbarResume;
