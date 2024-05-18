@@ -12,7 +12,7 @@ const Unfiltered = ({ isDarkMode }) => {
 	return (
 		<section className=" h-fit overflow-hidden relative">
 			<div>
-				<div className="absolute top-[4%] z-10">
+				<div className="hidden lg:block absolute top-[4%] z-10">
 					{isDarkMode ? <DarkBlur /> : <LightBlur />}
 				</div>
 
@@ -123,7 +123,7 @@ const Unfiltered = ({ isDarkMode }) => {
 				</div>
 			</div>
 
-			<div className="absolute bottom-[-7%] z-10">
+			<div className="hidden lg:block absolute bottom-[-7%] z-10">
 				{isDarkMode ? <DarkBlur2 /> : <LightBlur2 />}
 			</div>
 		</section>

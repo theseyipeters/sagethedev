@@ -104,7 +104,7 @@ const Hero = ({ isDarkMode }) => {
 				variants={variantsDiv}
 				initial="hidden"
 				animate={controlsDiv}
-				className="w-[200px] md:w-[300px] lg:w-[400px] h-[130px] md:h-[200px] flex items-center justify-center"
+				className="w-[250px] md:w-[350px] lg:w-[400px] h-[130px] md:h-[200px] flex items-center justify-center"
 				transition={{ duration: 1, delay: 0.5 }}>
 				{isDarkMode ? <Sagethedev /> : <Sagethedev2 />}
 			</motion.div>
@@ -126,7 +126,7 @@ const Hero = ({ isDarkMode }) => {
 				variants={variantsDiv}
 				initial="hidden"
 				animate={controlsDiv}
-				className="mt-1 p-5 bg-transparent dark:bg-[#f0eeee] rounded-lg w-[200px] flex items-center justify-center"
+				className="mt-1 p-2 lg:p-5 bg-transparent dark:bg-[#f0eeee] rounded-lg w-fit lg:w-[200px] flex items-center justify-center"
 				transition={{ duration: 1 }}>
 				<QRCode
 					bgColor={isDarkMode ? "#fefefe" : "transparent"}

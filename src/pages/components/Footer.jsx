@@ -31,7 +31,7 @@ const Footer = ({ isDarkMode }) => {
 				<hr className="border-green-1/20 dark:border-[#1B1B1E]" />
 			</div>
 			<div className="py-[40px]">
-				<p className="text-green-2 dark:text-green-1 text-center font-light">
+				<p className="text-sm md:text-base lg:text-base xl:text-lg text-green-2 dark:text-green-1 text-center font-light">
 					© {currentYear}. Oluwaseyi Peters. All rights reserved
 				</p>
 			</div>
