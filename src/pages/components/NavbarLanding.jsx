@@ -28,6 +28,18 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 		};
 	}, []);
 
+	useEffect(() => {
+		if (showMenu) {
+			document.body.classList.add("no-scroll");
+		} else {
+			document.body.classList.remove("no-scroll");
+		}
+
+		return () => {
+			document.body.classList.remove("no-scroll");
+		};
+	}, [showMenu]);
+
 	const navitems = [
 		{ name: "Projects", hasDropdown: false, link: "/projects" },
 		{ name: "About", hasDropdown: false, link: "/about" },
@@ -69,10 +81,10 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 				</nav>
 			</div>
 			<div className={`lg:hidden sticky top-0 ${navbarClass}`}>
-				<nav className=" flex justify-between items-center py-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] ">
+				<nav className="flex z-20 justify-between items-center py-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					{!showMenu && (
 						<Link
-							className="text-blue dark:text-white hover:text-green-1 dark:hover:text-white transition duration-500 "
+							className="text-blue dark:text-white hover:text-green-1 dark:hover:text-white transition duration-500"
 							to={"/"}>
 							<StgIcon />
 						</Link>
@@ -81,7 +93,7 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 					<div className="flex items-center">
 						{!showMenu && (
 							<div
-								className=" lg:hidden p-3 text-blue dark:text-white"
+								className="lg:hidden p-3 text-blue dark:text-white"
 								onClick={handleToggleMenu}>
 								<div>
 									<MenuIcon />
@@ -98,13 +110,12 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 					{showMenu && (
 						<div
 							style={{ opacity: 0.95, transition: "opacity 1s ease" }}
-							className="fixed flex md:items-center md:justify-center h-screen m-auto bg-white dark:bg-blue text-blue dark:text-white top-0 left-0 right-0 bottom-0 shadow-md p-[30px] z-40">
-							<ul className="w-full h-fit flex md:text-center text-left justify-start mt-20 flex-col font-normal  p-4 gap-y-[30px] z-[1000] text-blue dark:text-green-1 font-grotta  gap-x-[25px] ">
+							className="fixed flex md:items-center md:justify-center h-screen w-screen bg-white dark:bg-blue text-blue dark:text-white top-0 left-0 shadow-md p-[30px] z-40 overflow-y-auto">
+							<ul className="w-full h-fit flex md:text-center text-left justify-start mt-20 flex-col font-normal p-4 gap-y-[30px] z-[1000] text-blue dark:text-green-1 font-grotta gap-x-[25px]">
 								{navitems.map((item, index) => (
 									<Link
 										key={index}
 										to={item.link}
-										// onClick={handleDownloadResume}
 										className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
 										{item.name}
 									</Link>

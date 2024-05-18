@@ -3,10 +3,10 @@ import spotify from "../../assets/spotify.svg";
 
 const Playlists = () => {
 	return (
-		<section className="w-full flex flex-col gap-y-[20px] px-[100px] pt-[100px] pb-[150px] font-grotta font-light text-blue dark:text-white ">
+		<section className="w-full flex flex-col gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] pt-[100px] pb-[150px] font-grotta font-light text-blue dark:text-white ">
 			<div>
 				<div className="flex items-center gap-x-[10px] ">
-					<h1 className="text-[45px] text-green-2 dark:text-green-1 font-medium">
+					<h1 className="text-[30px] md:text-[35px] lg:text-[45px] text-green-2 dark:text-green-1 font-medium">
 						My Playlists
 					</h1>
 					<img
@@ -14,10 +14,12 @@ const Playlists = () => {
 						alt=""
 					/>
 				</div>
-				<p>A mix of my dangerously interesting taste in music... Enjoy!</p>
+				<p className="text-sm md:text-base lg:text-base">
+					A mix of my dangerously interesting taste in music... Enjoy!
+				</p>
 			</div>
 
-			<div className="flex gap-x-[20px]">
+			<div className="flex flex-col md:flex-col lg:flex-row gap-[20px] ">
 				<iframe
 					// style="border-radius: 12 px"
 					src="https://open.spotify.com/embed/playlist/0sj5Ep6vLcYWUjqcn1eyXq?utm_source=generator"

@@ -56,7 +56,7 @@ const Experiences = ({ isDarkMode }) => {
 		<section
 			id="experience"
 			ref={ref}
-			className="bg-lightorange dark:bg-black py-[140px] flex flex-col items-center justify-center px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+			className="bg-lightorange dark:bg-black py-[80px] md:py-[120px] lg:py-[140px] flex flex-col items-center justify-center px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 			<div className="w-full md:w-full lg:w-4/5 xl:w-3/5 text-blue dark:text-white font-grotta font-light text-justify md:text-center lg:text-center flex flex-col gap-y-[24px]">
 				<motion.h1
 					variants={variantsH4}
