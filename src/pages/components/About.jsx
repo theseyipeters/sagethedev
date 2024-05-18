@@ -55,7 +55,7 @@ const About = () => {
 					initial="hidden"
 					animate={controlsH4}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-green-2 dark:text-green-1 text-[35px] md:text-[35px] lg:text-[45px] font-medium">
+					className="text-green-2 dark:text-green-1 text-[30px] md:text-[35px] lg:text-[45px] font-medium">
 					I'm Oluwaseyi Peters
 				</motion.h1>
 				<motion.p

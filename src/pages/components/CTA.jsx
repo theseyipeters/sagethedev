@@ -6,12 +6,12 @@ const CTA = ({ isDarkMode }) => {
 		<section
 			className={`hero ${
 				isDarkMode ? "radial" : "radial2"
-			} px-[100px] py-[150px]`}>
-			<div className="flex flex-col gap-y-[20px] text-center font-grotta text-blue dark:text-white font-light w-[720px] items-center justify-center mx-auto">
+			} px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] py-[150px] `}>
+			<div className="flex flex-col gap-y-[20px] text-center font-grotta text-blue dark:text-white font-light w-full lg:w-[720px] items-center justify-center mx-auto">
 				<h1 className="text-green-2 dark:text-green-1 text-[50px] leading-[40px] font-medium">
 					Reach out
 				</h1>
-				<p className="text-[22px]">
+				<p className="text-[18px] md:text-[20px] lg:text-[22px]">
 					Let's shape innovative strategies, foster creativity, and elevate your
 					projects through collaborative facilitation
 				</p>
