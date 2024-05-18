@@ -3,14 +3,16 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import sma from "../../assets/sma.svg";
 import sma2 from "../../assets/sma2.svg";
+import alt from "../../assets/alt.svg";
+import alt2 from "../../assets/alt2.svg";
 import ndz from "../../assets/ndz.svg";
 import genesys from "../../assets/genesys.svg";
 import genesys2 from "../../assets/genesys2.svg";
 import txe from "../../assets/txe.svg";
 
-const Experiences = (isDarkMode) => {
-	const images = [sma, genesys, ndz, txe];
-	const images2 = [sma2, genesys2, ndz, txe];
+const Experiences = ({ isDarkMode }) => {
+	const images = [sma, genesys, ndz, alt, txe];
+	const imagess = [sma2, genesys2, ndz, alt2, txe];
 	const controlsH4 = useAnimation();
 	const controlsP = useAnimation();
 	const controlsImg = useAnimation();
@@ -92,10 +94,10 @@ const Experiences = (isDarkMode) => {
 
 			{isDarkMode ? (
 				<div className="flex w-full gap-x-[70px] justify-center items-center mt-[50px]">
-					{images2.map((image, index) => (
+					{images.map((imagee, index) => (
 						<motion.img
 							key={index}
-							src={image}
+							src={imagee}
 							alt={`image-${index}`}
 							initial="hidden"
 							animate={controlsP}
@@ -112,11 +114,11 @@ const Experiences = (isDarkMode) => {
 				</div>
 			) : (
 				<div className="flex w-full gap-x-[70px] justify-center items-center mt-[50px]">
-					{images.map((image, index) => (
+					{imagess.map((image, idx) => (
 						<motion.img
-							key={index}
+							key={idx}
 							src={image}
-							alt={`image-${index}`}
+							alt={`image-${idx}`}
 							initial="hidden"
 							animate={controlsP}
 							variants={{

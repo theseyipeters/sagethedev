@@ -1,32 +1,32 @@
 import React, { useRef } from "react";
 import Project from "./Project";
 
-export default function ProjectsHero() {
+export default function ProjectsHero({ isDarkMode }) {
 	return (
 		<section
 			id="hero"
 			// ref={ref}
-			className="w-full flex flex-col pt-[50px] text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+			className="w-full flex  flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 			<div className="w-full flex items-center justify-between">
 				<h1 className="text-4xl font-bold text-left">Projects.</h1>
 
-				<div className="filter flex flex-row gap-1 font-light text-sm">
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
+				<div className="filter font-grotta flex flex-row gap-1 font-light text-sm">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-blue dark:hover:bg-green-1 rounded-md hover:text-white dark:hover:text-blue w-fit">
 						All
 					</div>
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-blue dark:hover:bg-green-1 rounded-md hover:text-white dark:hover:text-blue w-fit">
 						Websites
 					</div>
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-blue dark:hover:bg-green-1 rounded-md hover:text-white dark:hover:text-blue w-fit">
 						Applications
 					</div>
-					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-green-1 rounded-md hover:text-blue w-fit">
+					<div className="filter__item cursor-pointer px-3 py-1 hover:bg-blue dark:hover:bg-green-1 rounded-md hover:text-white dark:hover:text-blue w-fit">
 						Designs
 					</div>
 				</div>
 			</div>
 
-			<main className="w-full items-center justify-center flex mt-[50px]">
+			<main className="w-full text-white items-center justify-center flex mt-[50px]">
 				<div className="flex gap-6 flex-wrap">
 					<Project
 						projectTitle={"Crafter AI"}
