@@ -13,6 +13,7 @@ import txe from "../../assets/txe.svg";
 const Experiences = ({ isDarkMode }) => {
 	const images = [sma, genesys, ndz, alt, txe];
 	const imagess = [sma2, genesys2, ndz, alt2, txe];
+
 	const controlsH4 = useAnimation();
 	const controlsP = useAnimation();
 	const controlsImg = useAnimation();
