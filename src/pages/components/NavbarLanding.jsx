@@ -41,7 +41,6 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 	}, [showMenu]);
 
 	const navitems = [
-		{ name: "Projects", hasDropdown: false, link: "/projects" },
 		{ name: "About", hasDropdown: false, link: "/about" },
 		{ name: "Résumé", hasDropdown: false, link: "/resume" },
 	];

@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import Github2 from "../../svgs/Github2";
 import Dribble2 from "../../svgs/Dribble2";
 import ContactMe from "../contact/ContactMe";
+import Journey from "../../svgs/Journey";
+import Volunteer from "../../svgs/Volunteer";
+import Guitar from "../../svgs/Guitar";
+import FunFact from "../../svgs/FunFact";
+import Quote from "../../svgs/Quote";
+import Book from "../../svgs/Book";
 
 export default function AboutHero({ isDarkMode }) {
 	const mantras = [
@@ -38,7 +44,7 @@ export default function AboutHero({ isDarkMode }) {
 			author: "Robert Greene",
 		},
 		{
-			title: "The Power of Habit: Why We Do What We Do in Life and Business",
+			title: "The Power of Habit",
 			author: "Charles Duhigg",
 		},
 		{
@@ -50,7 +56,7 @@ export default function AboutHero({ isDarkMode }) {
 			author: "M.J. DeMarco",
 		},
 		{
-			title: "Power and Influence: Beyond Formal Authority",
+			title: "Power and Influence",
 			author: "John P. Kotter",
 		},
 	];
@@ -67,25 +73,25 @@ export default function AboutHero({ isDarkMode }) {
 				<div className="flex gap-6 flex-wrap w-full">
 					<div
 						id="schedule-split-2"
-						className="flex px-2 md:px-20 w-full lg:w-full md:w-full overflow-y-scroll">
+						className="flex px-2 md:px-2 w-full lg:w-full md:w-full overflow-y-scroll">
 						<div className="relative w-full mb-[30px]">
-							<ul className="space-y-10 lg:px-12 list-circle z-20 md:w-full w-full border-l-2 border-l-green-2 event-list">
+							<ul className="space-y-10 lg:px-6 list-circle z-20 md:w-full w-full border-l-0.5 lg:border-l-1 border-l-green-2 event-list">
 								<li
 									className={`space-y-2 px-4 md:w-full lg:w-full ${
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
 									<div className="w-full flex items-center justify-between">
-										<h1 className="font-medium text-xl flex items-center gap-1">
+										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											My Journey into Tech
 											<span className="mt-[2px]">
-												<Github2 />
+												<Journey />
 											</span>
 										</h1>
 										<Link className="font-light text-sm underline underline-offset-2">
 											View Github
 										</Link>
 									</div>
-									<p className="md:w-2/3 lg:w-full">
+									<p className="w-full lg:w-full">
 										It was 2007 and I was supposed to create my first email
 										together with my elder brother and I just sat down and
 										watched him navigate the webpage{" "}
@@ -129,17 +135,17 @@ export default function AboutHero({ isDarkMode }) {
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
 									<div className="w-full flex items-center justify-between">
-										<h1 className="font-medium text-xl flex items-center gap-1">
+										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											I Volunteer Sometimes too.
 											<span className="mt-[2px]">
-												<Dribble2 />
+												<Volunteer />
 											</span>
 										</h1>
 										<Link className="font-light text-sm underline underline-offset-2">
 											View Products
 										</Link>
 									</div>
-									<p className="md:w-2/3 lg:w-full">
+									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										Giving back to the community is important to me. I volunteer
 										as a mentor at a local coding bootcamp, helping aspiring
 										developers build their skills and confidence. It's
@@ -152,17 +158,17 @@ export default function AboutHero({ isDarkMode }) {
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
 									<div className="w-full flex items-center justify-between">
-										<h1 className="font-medium text-xl flex items-center gap-1">
+										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											Other Skills and Talents
 											<span className="mt-[2px]">
-												<Dribble2 />
+												<Guitar />
 											</span>
 										</h1>
 										<Link className="font-light text-sm underline underline-offset-2">
 											View Products
 										</Link>
 									</div>
-									<p className="md:w-2/3 lg:w-full">
+									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										Aside from web development, I'm also an accomplished
 										musician. I play the guitar and have been part of a band for
 										the last 3 years. We've even released a few singles on
@@ -175,17 +181,17 @@ export default function AboutHero({ isDarkMode }) {
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
 									<div className="w-full flex items-center justify-between">
-										<h1 className="font-medium text-xl flex items-center gap-1">
+										<h1 className="font-medium text-base md:text-xl lg:text-xl flex items-center gap-1">
 											Fun Fact about Me.
 											<span className="mt-[2px]">
-												<Dribble2 />
+												<FunFact />
 											</span>
 										</h1>
 										<Link className="font-light text-sm underline underline-offset-2">
 											View Products
 										</Link>
 									</div>
-									<p className="md:w-2/3 lg:w-full">
+									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										<span className="font-medium">I died and rose again!</span>
 										<br />
 										Did you know I once got trapped in the trunk of a car for a
@@ -216,27 +222,27 @@ export default function AboutHero({ isDarkMode }) {
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
 									<div className="w-full flex items-center justify-between">
-										<h1 className="font-medium text-xl flex items-center gap-1">
+										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											Personal Mantras or Quotes
 											<span className="mt-[2px]">
-												<Dribble2 />
+												<Quote />
 											</span>
 										</h1>
 										<Link className="font-light text-sm underline underline-offset-2">
 											View Products
 										</Link>
 									</div>
-									<p className="md:w-2/3 lg:w-full">
-										<p>
+									<p className="w-full lg:w-full">
+										<p className="text-sm md:text-sm lg:text-base">
 											Here, I have some of my favorite quotes and mantras that I
 											live by. These just serve as a source of inspiration for
 											me in moments of confusion, and maybe they could help you
 											see life differently.
 										</p>
 										<br />
-										<ul className="w-full flex flex-col gap-2">
+										<ul className="w-full flex flex-col gap-1 lg:gap-2">
 											{mantras.map((mantra, index) => (
-												<li className="flex gap-2">
+												<li className="mt-2 flex text-sm lg:text-base flex-row flex-wrap gap-1 lg:gap-2">
 													<p>"{mantra.quote}"</p>
 													<p className="font-medium">- {mantra.author}</p>
 												</li>
@@ -249,27 +255,27 @@ export default function AboutHero({ isDarkMode }) {
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
 									<div className="w-full flex items-center justify-between">
-										<h1 className="font-medium text-xl flex items-center gap-1">
+										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											Book Recommendations
 											<span className="mt-[2px]">
-												<Dribble2 />
+												<Book />
 											</span>
 										</h1>
 										<Link className="font-light text-sm underline underline-offset-2">
 											View Products
 										</Link>
 									</div>
-									<p className="md:w-2/3 lg:w-full">
-										<p>
+									<p className="w-full lg:w-full">
+										<p className="text-sm md:text-sm lg:text-base">
 											Here are some of my favorite books on power that have
 											inspired and enlightened me over the years. Perhaps
 											they'll offer you new perspectives and ideas to empower
 											your own journey.
 										</p>
 										<br />
-										<ul className="w-full flex flex-col gap-2">
+										<ul className="w-full flex flex-col gap-1 lg:gap-2">
 											{books.map((book, index) => (
-												<li className="flex gap-2">
+												<li className="mt-2 flex text-sm lg:text-base flex-row flex-wrap gap-1 lg:gap-2">
 													<p>"{book.title}"</p>
 													<p className="font-medium">- {book.author}</p>
 												</li>
