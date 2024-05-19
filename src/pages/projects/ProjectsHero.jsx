@@ -8,7 +8,7 @@ export default function ProjectsHero({ isDarkMode }) {
 			id="hero"
 			// ref={ref}
 			className="w-full flex  flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
-			<div className="w-full flex items-center justify-between">
+			<div className="w-full flex flex-col gap-[20px] md:flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-between">
 				<h1 className="text-4xl font-bold text-left">Projects.</h1>
 
 				<div className="filter font-grotta flex flex-row gap-1 font-light text-sm">
@@ -27,7 +27,7 @@ export default function ProjectsHero({ isDarkMode }) {
 				</div>
 			</div>
 
-			<main className="w-full text-white items-center justify-center flex mt-[50px]">
+			<main className="w-full text-white items-center justify-center flex mt-2 lg:mt-[50px]">
 				<div className="flex gap-6 flex-wrap">
 					<Project
 						projectTitle={"Crafter AI"}

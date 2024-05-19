@@ -20,7 +20,7 @@ export default function Project({
 		<div
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className="relative w-[600px] h-fit font-grotta rounded-xl">
+			className="relative w-full lg:w-[600px] h-fit font-grotta rounded-xl">
 			{isLoading ? (
 				<div
 					className={`loader h-[400px] ${
@@ -38,13 +38,17 @@ export default function Project({
 
 			{isHovered && !isLoading && (
 				<div className="absolute bottom-0 h-full w-full px-5 py-5 rounded-xl bg-blue/90">
-					<div className="flex flex-col gap-2 absolute bottom-0 px-5 py-5">
-						<h2 className="text-3xl font-bold">{projectTitle}</h2>
-						<p className="text-sm">{projectDescription}</p>
+					<div className="flex flex-col gap-2 absolute bottom-0 p-3 md:p-5 lg:p-5">
+						<h2 className="text-xl md:text-2xl lg:text-3xl font-bold">
+							{projectTitle}
+						</h2>
+						<p className="text-[10px] md:text-xs lg:text-sm">
+							{projectDescription}
+						</p>
 						<div className="my-2 flex flex-row gap-3 flex-wrap">
 							{toolsArray.map((tool, index) => (
 								<span
-									className="px-3 py-1 text-xs font-bold rounded-full bg-gray-600"
+									className="px-2 md:px-3 lg:px-3 py-1 text-[8px] md:text-xs lg:text-xs lg:font-bold rounded-full bg-gray-600"
 									key={index}>
 									{tool}
 								</span>

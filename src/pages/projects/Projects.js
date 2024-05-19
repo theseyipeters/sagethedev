@@ -11,9 +11,6 @@ export default function Projects({ isDarkMode }) {
 					className={`h-fit ${
 						isDarkMode ? "hero" : "hero2"
 					}  w-full mb-10 flex items-center justify-center`}>
-					{/* <div className="fixed top-0 w-full z-50">
-						<Navbar />
-					</div> */}
 					<div className="w-full pt-[100px]">
 						<ProjectsHero isDarkMode={isDarkMode} />
 					</div>
