@@ -118,6 +118,14 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 							style={{ opacity: 0.95, transition: "opacity 1s ease" }}
 							className="fixed flex md:items-center md:justify-center h-screen w-screen bg-white dark:bg-blue text-blue dark:text-white top-0 left-0 shadow-md p-[30px] z-40 overflow-y-auto">
 							<ul className="w-full h-fit flex md:text-center text-left justify-start mt-20 flex-col font-normal p-4 gap-y-[30px] z-[1000] text-blue dark:text-green-1 font-grotta gap-x-[25px]">
+								<Link
+									to={"/"}
+									className={`w-full flex md:items-center md:justify-center ${
+										isDarkMode ? "text-white" : "text-blue"
+									}`}>
+									<Home />
+								</Link>
+
 								{navitems.map((item, index) => (
 									<Link
 										key={index}

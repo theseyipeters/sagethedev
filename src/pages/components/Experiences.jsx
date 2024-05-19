@@ -64,7 +64,7 @@ const Experiences = ({ isDarkMode }) => {
 					initial="hidden"
 					animate={controlsH4}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="text-blue dark:text-green-1 text-[30px] md:text-[35px] lg:text-[40px] font-grotta font-medium text-center leading-[30px] md:leading-[37px] lg:leading-[40px]">
+					className="text-blue dark:text-green-1 text-[30px] md:text-[35px] lg:text-[40px] font-medium text-center leading-[30px] md:leading-[37px] lg:leading-[40px]">
 					{" "}
 					I've embraced versatility and left my mark across diverse companies.
 				</motion.h1>

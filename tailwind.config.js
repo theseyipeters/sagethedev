@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				grotta: ["Grotta-Trial", "sans-serif"],
+				grotta: ["Grotta-Trial", "Inter"],
 			},
 			colors: {
 				white: "#cecece",
