@@ -20,7 +20,7 @@ export default function TextArea({
 				id={id}
 				name={name}
 				placeholder={placeholder}
-				className="placeholder:font-grotta placeholder:text-blue/20 h-[180px] dark:placeholder:text-white/20 placeholder:text-sm  w-full bg-transparent rounded-md py-[10px] px-[14px]  border-0.5 border-blue dark:border-white focus:outline-none text-sm md:text-base lg:text-base"
+				className="placeholder:text-blue/20 h-[180px] dark:placeholder:text-white/20 placeholder:text-sm  w-full bg-transparent rounded-md py-[10px] px-[14px]  border-0.5 border-blue dark:border-white focus:outline-none text-sm md:text-base lg:text-base"
 				value={value}
 				onChange={onChange}
 				required={isRequired}

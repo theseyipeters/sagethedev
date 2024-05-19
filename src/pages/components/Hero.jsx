@@ -117,7 +117,7 @@ const Hero = ({ isDarkMode }) => {
 					transition={{ duration: 1, delay: 0.2 }}
 					className="text-blue dark:text-green-1 font-grotta text-[20px] md:text-[25px] lg:text-[30px] font-medium tracking-[-1px] md:tracking-[-1px] lg:tracking-[-2px]">
 					I build{" "}
-					<span className="font-grotta bg-lightorange dark:bg-green-1 rounded-md text-blue py-2 px-2">
+					<span className="bg-lightorange dark:bg-green-1 rounded-md text-blue py-2 px-2">
 						{roles}
 					</span>
 				</motion.h3>
