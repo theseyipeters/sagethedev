@@ -80,7 +80,7 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 				</nav>
 			</div>
 			<div className={`lg:hidden sticky top-0 ${navbarClass}`}>
-				<nav className="flex z-20 justify-between items-center py-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<nav className="flex z-20 justify-between items-center py-[10px] md:py-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					{!showMenu && (
 						<Link
 							className="text-blue dark:text-white hover:text-green-1 dark:hover:text-white transition duration-500"
