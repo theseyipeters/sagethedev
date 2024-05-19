@@ -16,7 +16,7 @@ const Unfiltered = ({ isDarkMode }) => {
 					{isDarkMode ? <DarkBlur /> : <LightBlur />}
 				</div>
 
-				<div className="w-full font-grotta flex flex-col gap-[20px] md:flex-col lg:flex-row items-start lg:items-center justify-between px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] py-[50px] sticky z-20">
+				<div className="w-full  flex flex-col gap-[20px] md:flex-col lg:flex-row items-start lg:items-center justify-between px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] py-[50px] sticky z-20">
 					<div className="flex flex-col gap-[10px] w-full md:w-full lg:w-[600px]  text-blue dark:text-white font-light">
 						<h1 className="text-green-2 dark:text-green-1 text-[25px] md:text-[35px] lg:text-[45px] font-medium">
 							Unfiltered opinions about me
