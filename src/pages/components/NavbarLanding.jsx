@@ -7,6 +7,7 @@ import ToggleSwitch from "../../svgs/ToggleSwitch";
 import MenuIcon from "../../svgs/MenuIcon";
 import ToggleSwitch2 from "../../svgs/ToggleSwitch2";
 import CloseIcon from "../../svgs/CloseIcon";
+import Home from "../../svgs/Home";
 
 const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 	const [background, setBackground] = useState(false);
@@ -111,6 +112,14 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 							style={{ opacity: 0.95, transition: "opacity 1s ease" }}
 							className="fixed flex md:items-center md:justify-center h-screen w-screen bg-white dark:bg-blue text-blue dark:text-white top-0 left-0 shadow-md p-[30px] z-40 overflow-y-auto">
 							<ul className="w-full h-fit flex md:text-center text-left justify-start mt-20 flex-col font-normal p-4 gap-y-[30px] z-[1000] text-blue dark:text-green-1 font-grotta gap-x-[25px]">
+								<Link
+									to={"/"}
+									className={`w-full flex md:items-center md:justify-center ${
+										isDarkMode ? "text-white" : "text-blue"
+									}`}>
+									<Home />
+								</Link>
+
 								{navitems.map((item, index) => (
 									<Link
 										key={index}
@@ -119,6 +128,12 @@ const NavbarLanding = ({ setDarkMode, isDarkMode }) => {
 										{item.name}
 									</Link>
 								))}
+
+								<Link
+									to={"/contact"}
+									className="w-full text-center bg-green-2 dark:bg-green-1 px-[40px] py-2 rounded-md text-white dark:text-[#262626] gap-x-[5px]">
+									Contact
+								</Link>
 							</ul>
 
 							<div
