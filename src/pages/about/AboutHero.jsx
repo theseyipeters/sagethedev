@@ -65,7 +65,7 @@ export default function AboutHero({ isDarkMode }) {
 			id="hero"
 			// ref={ref}
 			className="w-full flex  flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] overflow-auto">
-			<div className="w-full flex items-center justify-between">
+			<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 				<h1 className="text-4xl font-bold text-left">About.</h1>
 			</div>
 
@@ -80,7 +80,7 @@ export default function AboutHero({ isDarkMode }) {
 									className={`space-y-2 px-4 md:w-full lg:w-full ${
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
-									<div className="w-full flex items-center justify-between">
+									<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											My Journey into Tech
 											<span className="mt-[2px]">
@@ -134,7 +134,7 @@ export default function AboutHero({ isDarkMode }) {
 									className={`space-y-2 px-4 md:w-full lg:w-full ${
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
-									<div className="w-full flex items-center justify-between">
+									<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											I Volunteer Sometimes too.
 											<span className="mt-[2px]">
@@ -157,7 +157,7 @@ export default function AboutHero({ isDarkMode }) {
 									className={`space-y-2 px-4 md:w-full lg:w-full ${
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
-									<div className="w-full flex items-center justify-between">
+									<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											Other Skills and Talents
 											<span className="mt-[2px]">
@@ -180,7 +180,7 @@ export default function AboutHero({ isDarkMode }) {
 									className={`space-y-2 px-4 md:w-full lg:w-full ${
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
-									<div className="w-full flex items-center justify-between">
+									<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 										<h1 className="font-medium text-base md:text-xl lg:text-xl flex items-center gap-1">
 											Fun Fact about Me.
 											<span className="mt-[2px]">
@@ -221,16 +221,16 @@ export default function AboutHero({ isDarkMode }) {
 									className={`space-y-2 px-4 md:w-full lg:w-full ${
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
-									<div className="w-full flex items-center justify-between">
+									<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											Personal Mantras or Quotes
 											<span className="mt-[2px]">
 												<Quote />
 											</span>
 										</h1>
-										<Link className="font-light text-sm underline underline-offset-2">
+										{/* <Link className="font-light text-sm underline underline-offset-2">
 											View Products
-										</Link>
+										</Link> */}
 									</div>
 									<p className="w-full lg:w-full">
 										<p className="text-sm md:text-sm lg:text-base">
@@ -254,16 +254,16 @@ export default function AboutHero({ isDarkMode }) {
 									className={`space-y-2 px-4 md:w-full lg:w-full ${
 										isDarkMode ? "inner2" : "inner1"
 									}`}>
-									<div className="w-full flex items-center justify-between">
+									<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 										<h1 className="font-medium text-sm md:text-xl lg:text-xl flex items-center gap-1">
 											Book Recommendations
 											<span className="mt-[2px]">
 												<Book />
 											</span>
 										</h1>
-										<Link className="font-light text-sm underline underline-offset-2">
+										{/* <Link className="font-light text-sm underline underline-offset-2">
 											View Products
-										</Link>
+										</Link> */}
 									</div>
 									<p className="w-full lg:w-full">
 										<p className="text-sm md:text-sm lg:text-base">

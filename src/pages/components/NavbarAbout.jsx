@@ -86,7 +86,7 @@ const NavbarAbout = ({ setDarkMode, isDarkMode }) => {
 				</nav>
 			</div>
 			<div className={`lg:hidden sticky top-0 ${navbarClass}`}>
-				<nav className="flex z-20 justify-between items-center py-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<nav className="flex z-20 justify-between items-center py-[10px] md:py-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					{!showMenu && (
 						<Link
 							className="text-blue dark:text-white hover:text-green-1 dark:hover:text-white transition duration-500"
@@ -128,8 +128,8 @@ const NavbarAbout = ({ setDarkMode, isDarkMode }) => {
 
 								<Link
 									to={"/contact"}
-									className="w-auto text-center px-[40px] py-2 border border-blue dark:border-green-1">
-									Contact Me
+									className="w-full text-center bg-green-2 dark:bg-green-1 px-[40px] py-2 rounded-md text-white dark:text-[#262626] gap-x-[5px]">
+									Contact
 								</Link>
 							</ul>
 

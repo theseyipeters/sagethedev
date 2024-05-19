@@ -37,10 +37,10 @@ export default function ResumeHero({ isDarkMode }) {
 					<button className="underline underline-offset-4">download</button>
 				</div>
 			</div>
-			<main className="w-full pt-20 font-grotta">
-				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
-					<div className="w-4/5">
-						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
+			<main className="w-full pt-10 lg:pt-20 font-grotta">
+				<div className="flex flex-col md:flex-row lg:flex-row gap-y-2 w-full border-t border-green-2/20 dark:border-green-1 py-10 lg:py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+					<div className="w-full md:w-4/5 lg:w-4/5">
+						<h1 className="text-[20px] lg:text-2xl text-green-2 dark:text-green-1 font-medium">
 							Brief Bio
 						</h1>
 					</div>
@@ -67,9 +67,9 @@ export default function ResumeHero({ isDarkMode }) {
 					</div>
 				</div>
 
-				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
-					<div className="w-4/5">
-						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
+				<div className="flex flex-col md:flex-row lg:flex-row gap-y-2 w-full border-t border-green-2/20 dark:border-green-1 py-10 lg:py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+					<div className="w-full md:w-4/5 lg:w-4/5">
+						<h1 className="text-[20px] lg:text-2xl text-green-2 dark:text-green-1 font-medium">
 							Experience
 						</h1>
 					</div>
@@ -95,13 +95,13 @@ export default function ResumeHero({ isDarkMode }) {
 						</p>
 					</div>
 				</div>
-				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<div className="flex flex-col md:flex-row lg:flex-row gap-y-2 w-full border-t border-green-2/20 dark:border-green-1 py-10 lg:py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					<div className="w-2/5">
-						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
+						<h1 className="text-[20px] lg:text-2xl text-green-2 dark:text-green-1 font-medium">
 							Skills
 						</h1>
 					</div>
-					<div className="flex flex-wrap gap-4 w-full ml-14">
+					<div className="flex flex-wrap gap-4 w-full ml-0 md:ml-14 lg:ml-14">
 						{skillsArray.map((skill, index) => (
 							<span
 								key={index}
@@ -112,13 +112,13 @@ export default function ResumeHero({ isDarkMode }) {
 					</div>
 				</div>
 
-				<div className="flex w-full border-t border-green-2/20 dark:border-green-1 py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+				<div className="flex flex-col md:flex-row lg:flex-row gap-y-2 w-full border-t border-green-2/20 dark:border-green-1 py-10 lg:py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 					<div className="w-2/5">
-						<h1 className="text-2xl text-green-2 dark:text-green-1 font-medium">
+						<h1 className="text-[20px] lg:text-2xl text-green-2 dark:text-green-1 font-medium">
 							Roles
 						</h1>
 					</div>
-					<div className="ml-14 w-full text-left">
+					<div className="ml-0 md:ml-14 lg:ml-14 w-full text-left">
 						<p>Software Engineer</p>
 						<p>Technical Product Manager</p>
 						<p>Frontend Engineer</p>
