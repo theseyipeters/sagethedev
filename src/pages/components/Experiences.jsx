@@ -18,7 +18,7 @@ const Experiences = ({ isDarkMode }) => {
 	const controlsP = useAnimation();
 	const controlsImg = useAnimation();
 	const controlsDiv = useAnimation();
-	const [ref, inView] = useInView({ threshold: 0.5 });
+	const [ref, inView] = useInView({ threshold: 0.3 });
 
 	const variantsDiv = {
 		hidden: { opacity: 0, y: -100 },
@@ -73,23 +73,25 @@ const Experiences = ({ isDarkMode }) => {
 					initial="hidden"
 					animate={controlsP}
 					transition={{ duration: 1, delay: 0.4 }}>
-					From meticulously crafting designs to fine-tuning user interfaces,
-					I've delved deep into the dynamic world of frontend development. My
-					journey has been one of collaboration, working closely with
-					stakeholders, designers, and fellow developers to breathe life into
-					visions and surpass expectations.
+					From the art of crafting intricate designs to the precision of
+					perfecting user interfaces, I've immersed myself in the ever-evolving
+					realm of frontend development. My path has been paved with
+					collaboration, working hand-in-hand with stakeholders, designers, and
+					fellow developers to transform ideas into reality and consistently
+					exceed expectations.
 				</motion.p>
 				<motion.p
 					variants={variantsP}
 					initial="hidden"
 					animate={controlsP}
 					transition={{ duration: 1, delay: 0.6 }}>
-					Through engagements with startups, agencies, and established
-					enterprises, I've honed my prowess in HTML, CSS, JavaScript, and
-					beyond, delivering seamless and compelling user experiences. Whether
-					it's constructing responsive layouts, integrating interactive
-					elements, or optimizing for peak performance, I thrive on pushing
-					boundaries and delivering impactful results.
+					My experiences span the spectrum from nimble startups and innovative
+					agencies to well-established enterprises. Throughout this journey,
+					I've mastered HTML, CSS, JavaScript, and beyond, shaping seamless and
+					captivating user experiences. Be it designing fluid, responsive
+					layouts, weaving in interactive elements, or fine-tuning for optimal
+					performance, I relish the challenge of pushing the envelope and
+					delivering results that truly make an impact.
 				</motion.p>
 			</div>
 

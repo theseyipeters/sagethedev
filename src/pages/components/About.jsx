@@ -64,11 +64,15 @@ const About = () => {
 					animate={controlsP}
 					transition={{ duration: 1, delay: 0.4 }}
 					className="text-blue dark:text-white font-light text-sm md:text-base lg:text-base">
-					My growth as a Frontend Engineer has been extremely wavy, but I’ve
-					seen more crests than troughs. Your friendly neighborhood frontend
-					developer, UX architect, and JavaScript engineer. I spend my days (and
-					often nights) painting the Internet canvas with PROJECTS and lines of
-					code, turning zeroes and ones into immersive, interactive experiences,
+					My journey as a Frontend Engineer has been a rollercoaster ride, full
+					of exhilarating highs and humbling lows. More often than not, though,
+					I find myself riding the peaks, constantly pushing the envelope of
+					what’s possible. Think of me as your go-to tech artist, a UX
+					visionary, and a JavaScript sorcerer. Day and Night, I transform the
+					digital void into vibrant, engaging realities with my PROJECTS and
+					countless lines of code. I take pride in turning abstract binary into
+					dynamic, user-centric experiences that captivate and delight
+					stakeholders.
 				</motion.p>
 				<motion.div
 					variants={variantsP}
