@@ -91,7 +91,7 @@ export default function AboutHero({ isDarkMode }) {
 											View Github
 										</Link>
 									</div>
-									<p className="w-full lg:w-full">
+									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										It was 2007 and I was supposed to create my first email
 										together with my elder brother and I just sat down and
 										watched him navigate the webpage{" "}
@@ -147,10 +147,10 @@ export default function AboutHero({ isDarkMode }) {
 									</div>
 									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										Giving back to the community is important to me. I volunteer
-										as a mentor at a local coding bootcamp, helping aspiring
-										developers build their skills and confidence. It's
-										incredibly rewarding to see their progress and know I'm
-										making a positive impact.
+										as a <b>Mentor</b> and <b>Community Manager</b> at a local
+										tech ed, helping aspiring developers build their skills and
+										confidence. It's incredibly rewarding to see their progress
+										and know I'm making a positive impact.
 									</p>
 								</li>
 								<li
