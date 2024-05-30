@@ -30,6 +30,17 @@ export default function ProjectsHero({ isDarkMode }) {
 			<main className="w-full text-white items-center justify-center flex mt-2 lg:mt-[50px]">
 				<div className="flex gap-6 flex-wrap">
 					<Project
+						projectTitle={"Common"}
+						projectDescription={
+							"Common is a versatile JavaScript-based tool designed to effortlessly create stunning color gradients and palettes. It provides designers and developers with an intuitive interface to generate harmonious color schemes for their projects, enhancing creativity and efficiency in the design process."
+						}
+						link={"https://usecommon.vercel.app"}
+						imgSrc={
+							"https://i.ibb.co/D1bG8Zy/copy-70-F90528-4-B4-E-4844-B3-AA-9-DD8-AF76231-A.gif"
+						}
+						toolsArray={["React", "Tailwind", "Nextjs", "Context"]}
+					/>
+					<Project
 						projectTitle={"Crafter AI"}
 						projectDescription={
 							"Crafter AI is a project management tool similar to Jira, enhanced with AI capabilities to aid teams in organizing, tracking, and managing their work more efficiently."
