@@ -32,10 +32,10 @@ export default function ResumeHero({ isDarkMode }) {
 			<div className="w-full flex items-center justify-between px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 				<h1 className="text-4xl font-bold text-left">Résumé.</h1>
 
-				<div className="font-grotta font-light flex gap-3">
+				{/* <div className="font-grotta font-light flex gap-3">
 					<button className="underline underline-offset-4">share</button>
 					<button className="underline underline-offset-4">download</button>
-				</div>
+				</div> */}
 			</div>
 			<main className="w-full pt-10 lg:pt-20 font-grotta">
 				<div className="flex flex-col md:flex-row lg:flex-row gap-y-2 w-full border-t border-green-2/20 dark:border-green-1 py-10 lg:py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
@@ -77,23 +77,27 @@ export default function ResumeHero({ isDarkMode }) {
 					</div>
 					<div className="w-full">
 						<p>
-							I have worked for companies like HP, Dimension Data, Microsoft
-							with a computer science degree and 15+ years field experience in
-							Technology, Strategy, Consulting & Sales, also worked with OEMs,
-							Startups, NGOs leading projects and collaborating closely with
-							stakeholders, specialists and developers
+							I have worked with companies like Crafter, Scrum Master Africa,
+							OnePipe, Genesys, and Nerdzfactory, holding a degree in Electrical
+							and Electronics and gaining 3 years of experience in frontend
+							engineering. My career in technology has involved diverse roles in
+							development, consulting, and strategy, with a focus on creating
+							impactful user experiences.
 							<br />
 							<br />
-							I organize design thinking, ideation, problem framing & product
-							strategy programs through workshops, facilitation and advisory
-							sessions to help startups and enterprise client’s journey through
-							the unique realities of our present day.
+							I specialize in organizing design thinking sessions, ideation
+							workshops, problem framing exercises, and product strategy
+							programs. My goal is to help startups and enterprise clients
+							navigate the unique challenges of today’s digital landscape
+							through interactive workshops, facilitation, and advisory
+							sessions.
 							<br />
 							<br />
-							Throughout my career, I've worn multiple hats—serving as an
-							individual contributor, steering teams as a line manager,
-							navigating boardrooms as a C-suite executive, and orchestrating
-							the synergy of teams of talented individuals across the region.
+							Throughout my journey, I have worn multiple hats—from being an
+							individual contributor and leading development teams to
+							collaborating closely with stakeholders, designers, and
+							developers. I am passionate about driving innovation and fostering
+							collaboration to deliver exceptional digital products.
 						</p>
 					</div>
 				</div>

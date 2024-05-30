@@ -34,6 +34,7 @@ export default function ProjectsHero({ isDarkMode }) {
 						projectDescription={
 							"Crafter AI is a project management tool similar to Jira, enhanced with AI capabilities to aid teams in organizing, tracking, and managing their work more efficiently."
 						}
+						link={"https://usecrafter.com"}
 						imgSrc={
 							"https://i.ibb.co/Np51sXd/copy-7680-EC6-F-6951-41-C4-897-C-36-DFABB5-D900.gif"
 						}
@@ -41,6 +42,7 @@ export default function ProjectsHero({ isDarkMode }) {
 					/>
 					<Project
 						projectTitle={`TxE Summit 2023`}
+						link={"https://enugutechsummit.com"}
 						projectDescription={
 							" Enugu TxE aims to ignite innovation, foster collaboration, and empower the local entrepreneurial community."
 						}
@@ -52,6 +54,7 @@ export default function ProjectsHero({ isDarkMode }) {
 
 					<Project
 						projectTitle={"Vitals"}
+						link={"https://vitalz.vercel.app"}
 						projectDescription={
 							"Vitals provides users with a system that helps manage medical records and automate clinical workflow with optimal security measures."
 						}

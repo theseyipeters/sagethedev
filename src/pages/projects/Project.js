@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Project({
 	projectTitle,
 	projectDescription,
 	toolsArray,
 	imgSrc,
+	link,
 	isDarkMode,
 }) {
 	const [isHovered, setIsHovered] = useState(false);
@@ -39,9 +41,11 @@ export default function Project({
 			{isHovered && !isLoading && (
 				<div className="absolute bottom-0 h-full w-full px-5 py-5 rounded-xl bg-blue/90">
 					<div className="flex flex-col gap-2 absolute bottom-0 p-3 md:p-5 lg:p-5">
-						<h2 className="text-xl md:text-2xl lg:text-3xl font-bold">
+						<Link
+							to={link}
+							className="text-xl md:text-2xl lg:text-3xl font-bold">
 							{projectTitle}
-						</h2>
+						</Link>
 						<p className="text-[10px] md:text-xs lg:text-sm">
 							{projectDescription}
 						</p>

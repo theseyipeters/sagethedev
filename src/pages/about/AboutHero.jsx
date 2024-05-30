@@ -192,7 +192,7 @@ export default function AboutHero({ isDarkMode }) {
 										</Link>
 									</div>
 									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
-										<span className="font-medium">I died and rose again!</span>
+										<span className="font-bold">I died and rose again!</span>
 										<br />
 										Did you know I once got trapped in the trunk of a car for a
 										good six to seven hours? It was one of the most harrowing
