@@ -48,7 +48,7 @@ const Unfiltered = ({ isDarkMode }) => {
 						lastName={"AJIBOYE"}
 						position="Scrum Master"
 						company="Nigeria Inter-Bank Settlement Systems PLC"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
+						comment="Seyi is a standout frontend engineer whose work speaks for itself. His ability to craft beautiful and functional user interfaces is impressive. He is efficient, responsive, and consistently exceeds expectations. An exceptional engineer!"
 						profileImg={wale}
 						isClient={true}
 					/>
@@ -72,7 +72,7 @@ const Unfiltered = ({ isDarkMode }) => {
 						lastName={"AJIBOYE"}
 						position="Scrum Master"
 						company="Nigeria Inter-Bank Settlement Systems PLC"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
+						comment="Seyi is a standout frontend engineer whose work speaks for itself. His ability to craft beautiful and functional user interfaces is impressive. He is efficient, responsive, and consistently exceeds expectations. An exceptional engineer!"
 						profileImg={wale}
 						isClient={true}
 					/>

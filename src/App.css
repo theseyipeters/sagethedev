@@ -4,6 +4,20 @@
 	font-family: "Grotta";
 }
 
+body {
+	transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-mode {
+	background-color: #dcf2ff;
+	color: #040d12;
+}
+
+body.dark-mode {
+	background-color: #040d12;
+	color: #dcf2ff;
+}
+
 @font-face {
 	font-family: "Grotta";
 	src: url(/src/fonts/Grotta-Trial-Regular.otf);

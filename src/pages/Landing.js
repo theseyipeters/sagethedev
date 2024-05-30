@@ -13,6 +13,9 @@ import Github from "../svgs/Github";
 import Behance from "../svgs/Behance";
 import Dribbble from "../svgs/Dribbble";
 import { Link } from "react-router-dom";
+import Instagram from "../svgs/Instagram";
+import Medium from "../svgs/Medium";
+import { Tooltip } from "react-tooltip";
 
 const Landing = ({ isDarkMode }) => {
 	const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -87,16 +90,51 @@ const Landing = ({ isDarkMode }) => {
 					isDarkMode ? "navbar3 text-white" : "navbar4 text-blue"
 				} rounded-full p-[10px] md:p-[15px] lg:p-[15px] fixed gap-y-[15px] bottom-[5%] left-[6%] text-right z-40`}>
 				<Link
+					data-tooltip-id="github"
 					className="w-[25px] md:w-[35px] lg:w-[35px]"
 					to={"https://github.com/theseyipeters"}>
 					<Github />
+					<Tooltip
+						id="github"
+						place="right"
+						effect="solid"
+						backgroundColor="black"
+						textColor="white"
+						arrowColor="black">
+						Github
+					</Tooltip>
 				</Link>
-				<div className="w-[25px] md:w-[35px] lg:w-[35px]">
-					<Behance />
-				</div>
-				<div className="w-[25px] md:w-[35px] lg:w-[35px]">
-					<Dribbble />
-				</div>
+				<Link
+					data-tooltip-id="instagram"
+					to={"https://www.instagram.com/sage.the.dev/"}
+					className="w-[25px] md:w-[35px] lg:w-[35px]">
+					<Instagram />
+					<Tooltip
+						id="instagram"
+						place="right"
+						effect="solid"
+						backgroundColor="black"
+						textColor="white"
+						arrowColor="black">
+						Instagram
+					</Tooltip>
+				</Link>
+				<Link
+					to={"https://medium.com/@theseyipeters"}
+					className="w-[25px] md:w-[35px] lg:w-[35px]">
+					<div data-tooltip-id="medium">
+						<Medium />
+					</div>
+					<Tooltip
+						id="medium"
+						place="right"
+						effect="solid"
+						backgroundColor="black"
+						textColor="white"
+						arrowColor="black">
+						Medium
+					</Tooltip>
+				</Link>
 			</div>
 		</div>
 	);
