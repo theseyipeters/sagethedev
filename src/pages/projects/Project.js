@@ -22,7 +22,7 @@ export default function Project({
 		<div
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className="relative w-full lg:w-[600px] h-fit font-grotta rounded-xl">
+			className="relative w-full lg:w-[600px] h-[400px] font-grotta rounded-xl">
 			{isLoading ? (
 				<div
 					className={`loader h-[400px] ${
@@ -43,7 +43,7 @@ export default function Project({
 					<div className="flex flex-col gap-2 absolute bottom-0 p-3 md:p-5 lg:p-5">
 						<Link
 							to={link}
-							className="text-xl md:text-2xl lg:text-3xl font-bold">
+							className="text-xl md:text-2xl lg:text-3xl font-bold hover:underline hover:underline-offset-2">
 							{projectTitle}
 						</Link>
 						<p className="text-[10px] md:text-xs lg:text-sm">
