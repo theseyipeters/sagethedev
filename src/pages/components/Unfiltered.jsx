@@ -27,10 +27,6 @@ const Unfiltered = ({ isDarkMode }) => {
 							real insight into what it's like to collaborate with me.{" "}
 						</p>
 					</div>
-
-					<button className="font-light text-green-2 dark:text-green-1 border border-green-2 dark:border-white py-[8px] px-[20px] rounded-full">
-						Submit your opinion
-					</button>
 				</div>
 			</div>
 
@@ -56,26 +52,6 @@ const Unfiltered = ({ isDarkMode }) => {
 						profileImg={wale}
 						isClient={true}
 					/>
-					<Opinion
-						// isDarkMode={isDarkMode}
-						firstName="Eliezer"
-						lastName={"AJAH"}
-						position="CEO"
-						company="XYZ Corp"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-						profileImg={eli}
-						isClient={false}
-					/>
-					<Opinion
-						// isDarkMode={isDarkMode}
-						firstName="Eliezer"
-						lastName={"AJAH"}
-						position="CEO"
-						company="XYZ Corp"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-						profileImg={wale}
-						isClient={true}
-					/>
 				</div>
 			</div>
 			<div className="lg:hidden">
@@ -96,26 +72,6 @@ const Unfiltered = ({ isDarkMode }) => {
 						lastName={"AJIBOYE"}
 						position="Scrum Master"
 						company="Nigeria Inter-Bank Settlement Systems PLC"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-						profileImg={wale}
-						isClient={true}
-					/>
-					<Opinion2
-						// isDarkMode={isDarkMode}
-						firstName="Eliezer"
-						lastName={"AJAH"}
-						position="CEO"
-						company="XYZ Corp"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-						profileImg={eli}
-						isClient={false}
-					/>
-					<Opinion2
-						// isDarkMode={isDarkMode}
-						firstName="Eliezer"
-						lastName={"AJAH"}
-						position="CEO"
-						company="XYZ Corp"
 						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
 						profileImg={wale}
 						isClient={true}
