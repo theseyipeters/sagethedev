@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/SagetheDev.svg";
 import logo2 from "../../assets/SagetheDev2.svg";
+import { Link } from "react-router-dom";
 
 const Footer = ({ isDarkMode }) => {
 	const currentYear = new Date().getFullYear();
@@ -24,9 +25,11 @@ const Footer = ({ isDarkMode }) => {
 							className="lg:w-[200px] md:w-[200px] w-[100px]"
 						/>
 					)}
-					<button className="flex px-[40px] py-[8px] rounded-full border border-green-2 dark:border-green-1 text-green-2 dark:text-green-1">
+					<Link
+						to={"/contact"}
+						className="flex px-[40px] py-[8px] rounded-full border border-green-2 dark:border-green-1 text-green-2 dark:text-green-1">
 						Get in touch
-					</button>
+					</Link>
 				</div>
 				<hr className="border-green-1/20 dark:border-[#1B1B1E]" />
 			</div>

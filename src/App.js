@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes, BrowserRouter, useLocation } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Projects from "./pages/projects/Projects";
@@ -18,6 +18,19 @@ function App() {
 	const darkMode = () => {
 		setIsDarkMode(!isDarkMode);
 	};
+
+	useEffect(() => {
+		const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+		if (isDarkMode) {
+			themeColorMeta.setAttribute("content", "#000000"); // Dark mode color
+			document.body.classList.add("dark-mode");
+			document.body.classList.remove("light-mode");
+		} else {
+			themeColorMeta.setAttribute("content", "#ffffff"); // Light mode color
+			document.body.classList.add("light-mode");
+			document.body.classList.remove("dark-mode");
+		}
+	}, [isDarkMode]);
 
 	return (
 		<div className="w-full">

@@ -79,7 +79,7 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 							))}
 						</ul>
 
-						<div className="ml-10">
+						<div className={`${isDarkMode ? "text-white" : "text-blue"} ml-10`}>
 							<ToggleSwitch setDarkMode={setDarkMode} />
 						</div>
 					</div>
@@ -107,7 +107,10 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 							</div>
 						)}
 						{!showMenu && (
-							<div className="ml-2 lg:hidden">
+							<div
+								className={`${
+									isDarkMode ? "text-white" : "text-blue"
+								} ml-2 lg:hidden`}>
 								<ToggleSwitch2 setDarkMode={setDarkMode} />
 							</div>
 						)}
