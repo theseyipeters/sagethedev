@@ -40,7 +40,7 @@ const Landing = ({ isDarkMode }) => {
 	}, []);
 
 	return (
-		<div className="bg-lightblue dark:bg-blue relative w-full overflow-hidden">
+		<div className="bg-lightblue dark:bg-blue relative w-full h-fit max-h-fit overflow-hidden">
 			<div className="bg-radial2 dark:bg-radial">
 				<div
 					className={`h-screen ${
