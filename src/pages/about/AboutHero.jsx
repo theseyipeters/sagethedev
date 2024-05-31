@@ -87,9 +87,6 @@ export default function AboutHero({ isDarkMode }) {
 												<Journey />
 											</span>
 										</h1>
-										<Link className="font-light text-sm underline underline-offset-2">
-											View Github
-										</Link>
 									</div>
 									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										It was 2007 and I was supposed to create my first email
@@ -111,23 +108,14 @@ export default function AboutHero({ isDarkMode }) {
 										year. I was tilted towards that direction growing up because
 										I learned fast. The support from my parents towards my music
 										skills were annoyingly overwhelming to the extent that they
-										went hiring a private music lesson teacher. At this point I
-										knew I had no choice but to keep learning and become better
-										and better, still, deep down I knew I had other interests.{" "}
-										<br /> <br /> A few years went past and we got a laptop at
-										the house for business purposes and finally I knew what my
-										other interests were. I was so drawn to the idea of the
-										internet. It’s a huge place and I loved getting replies and
-										answers to everything I asked Google. Finally, I went
-										through school, studying a course I was forced into studying
-										and after coming out with a forced grade and overcoming the
-										condemnation stage of not coming out with the best grade, I
-										felt the pressure of having to start something with my life.
-										This was where it all changed for me. My elder brother (who
-										is now a Scrum Master) re-introduced me into Tech and how
-										rewarding it could be from doing something you’re already in
-										love with while also having the opportunity to be a part of
-										a world-changing force.
+										went hiring a private music lesson teacher. At this point...{" "}
+										{""}
+										<Link
+											className="cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500"
+											target="_blank"
+											to={"https://medium.com/@theseyipeters"}>
+											Read more
+										</Link>
 									</p>
 								</li>
 								<li
@@ -142,7 +130,7 @@ export default function AboutHero({ isDarkMode }) {
 											</span>
 										</h1>
 										<Link className="font-light text-sm underline underline-offset-2">
-											View Products
+											View Images
 										</Link>
 									</div>
 									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
@@ -164,9 +152,9 @@ export default function AboutHero({ isDarkMode }) {
 												<Guitar />
 											</span>
 										</h1>
-										<Link className="font-light text-sm underline underline-offset-2">
+										{/* <Link className="font-light text-sm underline underline-offset-2">
 											View Products
-										</Link>
+										</Link> */}
 									</div>
 									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										Aside from web development, I'm also an accomplished
@@ -187,9 +175,9 @@ export default function AboutHero({ isDarkMode }) {
 												<FunFact />
 											</span>
 										</h1>
-										<Link className="font-light text-sm underline underline-offset-2">
+										{/* <Link className="font-light text-sm underline underline-offset-2">
 											View Products
-										</Link>
+										</Link> */}
 									</div>
 									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
 										<span className="font-bold">I died and rose again!</span>
