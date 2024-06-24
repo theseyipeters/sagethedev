@@ -23,6 +23,8 @@ export default function ResumeHero({ isDarkMode }) {
 		"Context API",
 		"JSON",
 		"UI/UX",
+		"Firebase",
+		"MongoDB",
 	];
 	return (
 		<section
@@ -32,10 +34,17 @@ export default function ResumeHero({ isDarkMode }) {
 			<div className="w-full flex items-center justify-between px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 				<h1 className="text-4xl font-bold text-left">Résumé.</h1>
 
-				{/* <div className="font-grotta font-light flex gap-3">
-					<button className="underline underline-offset-4">share</button>
-					<button className="underline underline-offset-4">download</button>
-				</div> */}
+				<div className="font-grotta font-light flex gap-3">
+					{/* <button className="underline underline-offset-4">share</button> */}
+					<Link
+						to={
+							"https://drive.google.com/file/d/1c4fVLocAGIeA614Hpnc5c3BVh9V_yN5A/view?usp=sharing"
+						}
+						target="_blank"
+						className="underline underline-offset-4">
+						download
+					</Link>
+				</div>
 			</div>
 			<main className="w-full pt-10 lg:pt-20 font-grotta">
 				<div className="flex flex-col md:flex-row lg:flex-row gap-y-2 w-full border-t border-green-2/20 dark:border-green-1 py-10 lg:py-20 px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
@@ -45,12 +54,13 @@ export default function ResumeHero({ isDarkMode }) {
 						</h1>
 					</div>
 					<div className="w-full">
-						<p>
-							I am a versatile Frontend Developer with a foundation in
-							Electrical Engineering from the University of Ilorin. My
-							multifaceted career spans roles as a community manager, technical
-							product manager, and social media manager, equipping me with a
-							unique perspective on technology and user engagement.
+						<p className="text-base lg:text-[18px]">
+							I am a versatile <b>Frontend Developer</b> with a foundation in
+							<b> Electrical Engineering</b> from the University of Ilorin. My
+							multifaceted career spans roles as a <b>Community Manager</b>,
+							<b>Technical Product Manager</b>, and <b>Social Media Manager</b>,
+							equipping me with a unique perspective on technology and user
+							engagement.
 							<br />
 							<br />
 							Known for my innovative mindset and collaborative spirit, I thrive
@@ -76,10 +86,11 @@ export default function ResumeHero({ isDarkMode }) {
 						</h1>
 					</div>
 					<div className="w-full">
-						<p>
-							I have worked with companies like Crafter, Scrum Master Africa,
-							OnePipe, Genesys, and Nerdzfactory, holding a degree in Electrical
-							and Electronics and gaining 3 years of experience in frontend
+						<p className="text-base lg:text-[18px]">
+							I have worked with companies like <b>Crafter</b>,{" "}
+							<b>Scrum Master Africa</b>, <b>OnePipe</b>, <b>Genesys</b>, and
+							<b> Nerdzfactory</b>, holding a degree in Electrical and
+							Electronics and gaining 3 years of experience in frontend
 							engineering. My career in technology has involved diverse roles in
 							development, consulting, and strategy, with a focus on creating
 							impactful user experiences.
@@ -111,7 +122,7 @@ export default function ResumeHero({ isDarkMode }) {
 						{skillsArray.map((skill, index) => (
 							<span
 								key={index}
-								className="py-2 px-4 rounded-full bg-green-1 dark:bg-slate-700 text-blue dark:text-white">
+								className="py-2 px-4 text-base lg:text-[18px] rounded-full bg-green-1 dark:bg-slate-700 text-blue dark:text-white">
 								{skill}
 							</span>
 						))}
@@ -125,9 +136,11 @@ export default function ResumeHero({ isDarkMode }) {
 						</h1>
 					</div>
 					<div className="w-full text-left">
-						<p>Software Engineer</p>
-						<p>Technical Product Manager</p>
-						<p>Frontend Engineer</p>
+						<p className="text-base lg:text-[18px]">Software Engineer</p>
+						<p className="text-base lg:text-[18px]">
+							Technical Product Manager
+						</p>
+						<p className="text-base lg:text-[18px]">Frontend Engineer</p>
 					</div>
 				</div>
 				{/* <CTA isDarkMode={isDarkMode} /> */}

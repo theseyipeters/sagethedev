@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Opinion from "./Opinion";
 import eli from "../../assets/eli.svg";
 import wale from "../../assets/wale.svg";
+import micah from "../../assets/micah.svg";
+import arnold from "../../assets/arnold.svg";
 import DarkBlur from "../../svgs/DarkBlur";
 import LightBlur from "../../svgs/LightBlur";
 import DarkBlur2 from "../../svgs/DarkBlur2";
@@ -12,7 +14,7 @@ const Unfiltered = ({ isDarkMode }) => {
 	return (
 		<section className=" h-fit overflow-hidden relative">
 			<div>
-				<div className="hidden lg:block absolute top-[4%] z-10">
+				<div className="hidden lg:block absolute right-[-45%] top-0 z-10 rotate-90">
 					{isDarkMode ? <DarkBlur /> : <LightBlur />}
 				</div>
 
@@ -31,55 +33,108 @@ const Unfiltered = ({ isDarkMode }) => {
 			</div>
 
 			<div className="hidden lg:block">
-				<div className="pt-[100px] pb-[150px] h-[800px] flex flex-col gap-y-[40px] overflow-scroll">
-					<Opinion
-						isDarkMode={isDarkMode}
-						firstName="Eliezer"
-						lastName={"AJAH"}
-						position="Head, Talent Development and Outsourcing"
-						company="Genesys Tech Hub"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-						profileImg={eli}
-						isClient={false}
-					/>
-					<Opinion
-						// isDarkMode={isDarkMode}
-						firstName="Olawale"
-						lastName={"AJIBOYE"}
-						position="Scrum Master"
-						company="Nigeria Inter-Bank Settlement Systems PLC"
-						comment="Seyi is a standout frontend engineer whose work speaks for itself. His ability to craft beautiful and functional user interfaces is impressive. He is efficient, responsive, and consistently exceeds expectations. An exceptional engineer!"
-						profileImg={wale}
-						isClient={true}
-					/>
+				<div className=" pt-[100px] pb-[150px] h-[500px] flex flex-row gap-y-[40px] overflow-scroll">
+					<div className="opinion-container">
+						<Opinion
+							isDarkMode={isDarkMode}
+							firstName="Eliezer"
+							lastName={"AJAH"}
+							position="Head, Talent Development and Outsourcing"
+							company="Genesys Tech Hub"
+							comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
+							profileImg={eli}
+							isClient={true}
+						/>
+						<Opinion
+							// isDarkMode={isDarkMode}
+							firstName="Olawale"
+							lastName={"AJIBOYE"}
+							position="Scrum Master"
+							company="Nigeria Inter-Bank Settlement Systems PLC"
+							comment="Seyi is a standout frontend engineer whose work speaks for itself. His ability to craft beautiful and functional user interfaces is impressive. He is efficient, responsive, and consistently exceeds expectations. An exceptional engineer!"
+							profileImg={wale}
+							isClient={true}
+						/>
+						<Opinion
+							isDarkMode={isDarkMode}
+							firstName="Micah"
+							lastName={"TIMILEYIN"}
+							position="Program Manager"
+							company="Alt School Africa"
+							comment={
+								"I had the opportunity of working with Seyi during a training program and one thing I can attest to is that Seyi wants to learn from the process he wants to see how the already good work can be better and I think this is a very valuable attribute for a great professional in the 21st century."
+							}
+							profileImg={micah}
+							isClient={true}
+						/>
+						<Opinion
+							isDarkMode={isDarkMode}
+							firstName="Arnold"
+							lastName={"NGOWI"}
+							position="Sr. Software Engineer"
+							company="GTCO - Dar es Salaam, Tanzania"
+							comment={
+								"Seyi's expertise and dedication were once again evident as he contributed significantly to the project's success. His effective communication and teamwork were crucial in meeting our goals. Seyi Peters is a highly skilled, dependable, and collaborative developer who would be an asset to any team."
+							}
+							profileImg={arnold}
+							isClient={true}
+						/>
+					</div>
 				</div>
 			</div>
 			<div className="lg:hidden">
-				<div className="pt-[100px] pb-[150px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] h-[800px] flex flex-col gap-y-[40px] overflow-scroll">
-					<Opinion2
-						isDarkMode={isDarkMode}
-						firstName="Eliezer"
-						lastName={"AJAH"}
-						position="Head, Talent Development and Outsourcing"
-						company="Genesys Tech Hub"
-						comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
-						profileImg={eli}
-						isClient={false}
-					/>
-					<Opinion2
-						// isDarkMode={isDarkMode}
-						firstName="Olawale"
-						lastName={"AJIBOYE"}
-						position="Scrum Master"
-						company="Nigeria Inter-Bank Settlement Systems PLC"
-						comment="Seyi is a standout frontend engineer whose work speaks for itself. His ability to craft beautiful and functional user interfaces is impressive. He is efficient, responsive, and consistently exceeds expectations. An exceptional engineer!"
-						profileImg={wale}
-						isClient={true}
-					/>
+				<div className="pt-[100px] pb-[150px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] h-fit flex flex-col gap-y-[40px] overflow-scroll">
+					<div className="opinion-container2 flex flex-col gap-10 h-fit mt-[150px] overflow-scroll">
+						<Opinion2
+							isDarkMode={isDarkMode}
+							firstName="Eliezer"
+							lastName={"AJAH"}
+							position="Head, Talent Development and Outsourcing"
+							company="Genesys Tech Hub"
+							comment="Seyi's ability to turn complex ideas into elegant, user-friendly interfaces is truly remarkable. He consistently delivers beyond expectations and communicates effectively throughout the development process. Highly recommended!"
+							profileImg={eli}
+							isClient={false}
+						/>
+						<Opinion2
+							// isDarkMode={isDarkMode}
+							firstName="Olawale"
+							lastName={"AJIBOYE"}
+							position="Scrum Master"
+							company="Nigeria Inter-Bank Settlement Systems PLC"
+							comment="Seyi is a standout frontend engineer whose work speaks for itself. His ability to craft beautiful and functional user interfaces is impressive. He is efficient, responsive, and consistently exceeds expectations. An exceptional engineer!"
+							profileImg={wale}
+							isClient={true}
+						/>
+						<Opinion2
+							isDarkMode={isDarkMode}
+							firstName="Micah"
+							lastName={"TIMILEYIN"}
+							position="Program Manager"
+							company="Alt School Africa"
+							comment={
+								"I had the opportunity of working with Seyi during a training program and one thing I can attest to is that Seyi wants to learn from the process he wants to see how the already good work can be better and I think this is a very valuable attribute for a great professional in the 21st century."
+							}
+							profileImg={micah}
+							isClient={true}
+						/>
+
+						<Opinion2
+							isDarkMode={isDarkMode}
+							firstName="Arnold"
+							lastName={"NGOWI"}
+							position="Sr. Software Engineer"
+							company="GTCO - Dar es Salaam, Tanzania"
+							comment={
+								"Seyi's expertise and dedication were once again evident as he contributed significantly to the project's success. His effective communication and teamwork were crucial in meeting our goals. Seyi Peters is a highly skilled, dependable, and collaborative developer who would be an asset to any team."
+							}
+							profileImg={arnold}
+							isClient={true}
+						/>
+					</div>
 				</div>
 			</div>
 
-			<div className="hidden lg:block absolute bottom-[-7%] z-10">
+			<div className="hidden lg:block absolute left-[-45%] bottom-0 z-10 rotate-90">
 				{isDarkMode ? <DarkBlur2 /> : <LightBlur2 />}
 			</div>
 		</section>

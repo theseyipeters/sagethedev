@@ -21,22 +21,24 @@ const Opinion = ({
 				isClient ? "flex-row-reverse" : ""
 			} justify-center items-end`}>
 			<div className={`flex`}>
-				{isDarkMode ? (
-					<img
-						src={isClient ? chatbox : chatbox2}
-						alt=""
-					/>
-				) : (
-					<img
-						src={isClient ? chatbox4 : chatbox3}
-						alt=""
-					/>
-				)}
+				<div className="w-[600px]">
+					{isDarkMode ? (
+						<img
+							src={isClient ? chatbox : chatbox2}
+							alt=""
+						/>
+					) : (
+						<img
+							src={isClient ? chatbox4 : chatbox3}
+							alt=""
+						/>
+					)}
+				</div>
 
 				<div
-					className={`flex flex-col gap-y-[15px] mt-[50px]  ${
-						isClient ? "ml-[-520px]" : "ml-[-540px]"
-					} w-[500px] text-green-2 dark:text-white font-grotta font-light text-[18px]`}>
+					className={`flex flex-col gap-y-[15px] mt-[40px] 
+						 ${isClient ? "ml-[-530px]" : "ml-[-540px]"}
+					 w-[500px] text-green-2 dark:text-white font-grotta font-light text-[18px]`}>
 					<p className="italic font-extralight">"{comment}"</p>
 					<div>
 						<h1 className="text-green-2 dark:text-green-1">

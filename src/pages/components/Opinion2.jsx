@@ -11,7 +11,7 @@ export default function Opinion2({
 	isDarkMode,
 }) {
 	return (
-		<div className="border border-blue dark:border-white w-full flex flex-col h-full py-12 px-4 rounded-2xl">
+		<div className="border border-blue dark:border-white w-full flex flex-col h-fit py-12 px-4 rounded-2xl">
 			<div
 				className={`flex flex-col gap-y-[30px] w-full text-green-2 dark:text-white font-grotta font-light text-[18px]`}>
 				<p className="italic font-extralight">"{comment}"</p>

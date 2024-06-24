@@ -47,7 +47,7 @@ export default function ProjectsHero({ isDarkMode }) {
 						}
 						link={"https://usecrafter.com"}
 						imgSrc={
-							"https://i.ibb.co/Np51sXd/copy-7680-EC6-F-6951-41-C4-897-C-36-DFABB5-D900.gif"
+							"https://drive.google.com/file/d/1V6tk4U83Vi1YF7EubzsuWA5PcTItemr9/view?usp=sharing"
 						}
 						toolsArray={["React", "Zustand", "Nextjs", "Stripe API"]}
 					/>
