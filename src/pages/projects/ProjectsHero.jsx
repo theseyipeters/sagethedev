@@ -27,8 +27,8 @@ export default function ProjectsHero({ isDarkMode }) {
 				</div>
 			</div>
 
-			<main className="w-full text-white items-center justify-center flex mt-2 lg:mt-[50px]">
-				<div className="flex gap-6 flex-wrap">
+			<main className="w-full text-white items-center justify-center  flex mt-2 lg:mt-[50px]">
+				<div className="flex gap-6 flex-wrap mx-auto items-center justify-center">
 					<Project
 						projectTitle={"Common"}
 						projectDescription={
@@ -65,7 +65,7 @@ export default function ProjectsHero({ isDarkMode }) {
 
 					<Project
 						projectTitle={"Vitals"}
-						link={"https://vitalz.vercel.app"}
+						// link={"https://vitalz.vercel.app"}
 						projectDescription={
 							"Vitals provides users with a system that helps manage medical records and automate clinical workflow with optimal security measures."
 						}

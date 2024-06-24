@@ -24,7 +24,7 @@ const Articles = () => {
 			title: "React JS: Building a To-Do-List App",
 			description:
 				"React is a JavaScript library for building user interfaces. It’s a popular choice for web development and is used by companies like Facebook, Netflix, and Airbnb. In this article, we will go over the major things you need to know to create a simple Todo List App using React.",
-			image: txe,
+			image: git,
 			link: "https://medium.com/@theseyipeters/react-js-building-a-to-do-list-app-cd04e937b3ab",
 		},
 		{
@@ -102,10 +102,10 @@ const Articles = () => {
 					/>
 				))}
 			</div>
-			<video
+			{/* <video
 				src={txe}
 				autoPlay={true}
-			/>
+			/> */}
 		</section>
 	);
 };

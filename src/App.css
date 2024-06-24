@@ -192,3 +192,51 @@ section {
 	overflow: hidden;
 	height: 100%;
 }
+
+.opinion-container {
+	display: flex;
+	flex-wrap: nowrap;
+	animation: scrollLeftRight 40s linear infinite;
+}
+
+.opinion-container > * {
+	flex-shrink: 0;
+}
+
+.opinion-container:hover {
+	animation-play-state: paused;
+}
+
+@keyframes scrollLeftRight {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-70%);
+	}
+	100% {
+		transform: translateX(5%);
+	}
+}
+
+@keyframes scrollLeftInfinite {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.opinion-container2 {
+	flex-wrap: nowrap;
+	animation: scrollUp 60s linear infinite;
+}
+
+.opinion-container2 > * {
+	flex-shrink: 0;
+}
+
+.opinion-container2:hover {
+	animation-play-state: paused;
+}
