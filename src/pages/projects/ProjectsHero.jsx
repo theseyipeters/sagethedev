@@ -27,8 +27,8 @@ export default function ProjectsHero({ isDarkMode }) {
 				</div>
 			</div>
 
-			<main className="w-full text-white items-center justify-center flex mt-2 lg:mt-[50px]">
-				<div className="flex gap-6 flex-wrap">
+			<main className="w-full text-white items-center justify-center  flex mt-2 lg:mt-[50px]">
+				<div className="flex gap-6 flex-wrap mx-auto items-center justify-center">
 					<Project
 						projectTitle={"Common"}
 						projectDescription={
@@ -47,7 +47,7 @@ export default function ProjectsHero({ isDarkMode }) {
 						}
 						link={"https://usecrafter.com"}
 						imgSrc={
-							"https://drive.google.com/file/d/1V6tk4U83Vi1YF7EubzsuWA5PcTItemr9/view?usp=sharing"
+							"https://i.ibb.co/Np51sXd/copy-7680-EC6-F-6951-41-C4-897-C-36-DFABB5-D900.gif"
 						}
 						toolsArray={["React", "Zustand", "Nextjs", "Stripe API"]}
 					/>
@@ -65,7 +65,7 @@ export default function ProjectsHero({ isDarkMode }) {
 
 					<Project
 						projectTitle={"Vitals"}
-						link={"https://vitalz.vercel.app"}
+						// link={"https://vitalz.vercel.app"}
 						projectDescription={
 							"Vitals provides users with a system that helps manage medical records and automate clinical workflow with optimal security measures."
 						}
