@@ -40,7 +40,7 @@ const Landing = ({ isDarkMode }) => {
 					delay: 0.1,
 				})
 				.from("#animate-logo-span", {
-					yPercent: "1000",
+					yPercent: "2000",
 					opacity: 0,
 					duration: 1,
 					// delay: 0.5,
@@ -110,10 +110,10 @@ const Landing = ({ isDarkMode }) => {
 			ref={comp}>
 			<div
 				id="intro-slider"
-				className="h-screen fixed overflow-hidden w-full bg-radial top-0 left-0 z-50 flex gap-5 items-center justify-center">
+				className="h-screen fixed overflow-hidden w-full bg-radial2 top-0 left-0 z-50 flex gap-5 items-center justify-center text-green-2">
 				<span
 					id="animate-logo-span"
-					className="h-[20px] w-[20px] lg:h-[30px] lg:w-[30px] bg-radial2 rounded-full"></span>
+					className="h-[20px] w-[20px] lg:h-[30px] lg:w-[30px] bg-radial rounded-full"></span>
 				<AnimatedLogo />
 			</div>
 			<div
