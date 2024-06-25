@@ -7,7 +7,7 @@ export default function ProjectsHero({ isDarkMode }) {
 		<section
 			id="hero"
 			// ref={ref}
-			className="w-full flex  flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
+			className="w-full flex   flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px]">
 			<div className="w-full flex flex-col gap-[20px] md:flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-between">
 				<h1 className="text-4xl font-bold text-left">Projects.</h1>
 

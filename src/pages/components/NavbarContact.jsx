@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import resumePDF from "../../files/resume-dark.pdf";
+// import resumePDF from "../../files/resume-dark.pdf";
 import StgIcon from "../../svgs/StgIcon";
 import ToggleSwitch from "../../svgs/ToggleSwitch";
 import Home from "../../svgs/Home";

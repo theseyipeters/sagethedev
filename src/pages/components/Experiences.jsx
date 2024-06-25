@@ -69,6 +69,7 @@ const Experiences = ({ isDarkMode }) => {
 					I've embraced versatility and left my mark across diverse companies.
 				</motion.h1>
 				<motion.p
+					className="text-sm md:text-base lg:text-lg"
 					variants={variantsP}
 					initial="hidden"
 					animate={controlsP}
@@ -81,6 +82,7 @@ const Experiences = ({ isDarkMode }) => {
 					exceed expectations.
 				</motion.p>
 				<motion.p
+					className="text-sm md:text-base lg:text-lg"
 					variants={variantsP}
 					initial="hidden"
 					animate={controlsP}

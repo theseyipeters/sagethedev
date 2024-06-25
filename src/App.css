@@ -1,11 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
 	scroll-behavior: smooth;
 	@apply transition-colors duration-300;
-	font-family: "Grotta";
+	font-family: "Hanken Grotesk";
 }
 
 body {
 	transition: background-color 0.5s, color 0.5s;
+}
+p {
+	letter-spacing: "-1px";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Grotta" !important;
 }
 
 body.light-mode {

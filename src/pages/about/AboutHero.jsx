@@ -64,7 +64,7 @@ export default function AboutHero({ isDarkMode }) {
 		<section
 			id="hero"
 			// ref={ref}
-			className="w-full flex  flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] overflow-auto">
+			className="w-full flex font-grotta  flex-col pt-[50px] text-blue dark:text-white gap-y-[20px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] overflow-auto">
 			<div className="w-full flex flex-col md:flex-row lg:flex-row lg:items-center md:justify-between lg:justify-between">
 				<h1 className="text-4xl font-bold text-left">About.</h1>
 			</div>
@@ -88,7 +88,7 @@ export default function AboutHero({ isDarkMode }) {
 											</span>
 										</h1>
 									</div>
-									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
+									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base font-grotta">
 										It was 2007 and I was supposed to create my first email
 										together with my elder brother and I just sat down and
 										watched him navigate the webpage{" "}
@@ -133,7 +133,7 @@ export default function AboutHero({ isDarkMode }) {
 											View Images
 										</Link>
 									</div>
-									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
+									<p className="font-grotta w-full lg:w-full text-sm md:text-sm lg:text-base">
 										Giving back to the community is important to me. I volunteer
 										as a <b>Mentor</b> and <b>Community Manager</b> at a local
 										tech ed, helping aspiring developers build their skills and
@@ -156,7 +156,7 @@ export default function AboutHero({ isDarkMode }) {
 											View Products
 										</Link> */}
 									</div>
-									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
+									<p className="font-grotta w-full lg:w-full text-sm md:text-sm lg:text-base">
 										Aside from web development, I'm also an accomplished
 										musician. I play the guitar and have been part of a band for
 										the last 3 years. We've even released a few singles on
@@ -179,8 +179,10 @@ export default function AboutHero({ isDarkMode }) {
 											View Products
 										</Link> */}
 									</div>
-									<p className="w-full lg:w-full text-sm md:text-sm lg:text-base">
-										<span className="font-bold">I died and rose again!</span>
+									<p className="font-grotta w-full lg:w-full text-sm md:text-sm lg:text-base">
+										<span className="font-bold font-grotta">
+											I died and rose again!
+										</span>
 										<br />
 										Did you know I once got trapped in the trunk of a car for a
 										good six to seven hours? It was one of the most harrowing
@@ -221,7 +223,7 @@ export default function AboutHero({ isDarkMode }) {
 										</Link> */}
 									</div>
 									<p className="w-full lg:w-full">
-										<p className="text-sm md:text-sm lg:text-base">
+										<p className="text-sm md:text-sm lg:text-base font-grotta">
 											Here, I have some of my favorite quotes and mantras that I
 											live by. These just serve as a source of inspiration for
 											me in moments of confusion, and maybe they could help you
@@ -231,8 +233,10 @@ export default function AboutHero({ isDarkMode }) {
 										<ul className="w-full flex flex-col gap-1 lg:gap-2">
 											{mantras.map((mantra, index) => (
 												<li className="mt-2 flex text-sm lg:text-base flex-row flex-wrap gap-1 lg:gap-2">
-													<p>"{mantra.quote}"</p>
-													<p className="font-medium">- {mantra.author}</p>
+													<p className="font-grotta">"{mantra.quote}"</p>
+													<p className="font-medium font-grotta">
+														- {mantra.author}
+													</p>
 												</li>
 											))}
 										</ul>
@@ -253,8 +257,8 @@ export default function AboutHero({ isDarkMode }) {
 											View Products
 										</Link> */}
 									</div>
-									<p className="w-full lg:w-full">
-										<p className="text-sm md:text-sm lg:text-base">
+									<p className="w-full lg:w-full font-grotta">
+										<p className="text-sm md:text-sm lg:text-base font-grotta">
 											Here are some of my favorite books on power that have
 											inspired and enlightened me over the years. Perhaps
 											they'll offer you new perspectives and ideas to empower
@@ -264,8 +268,10 @@ export default function AboutHero({ isDarkMode }) {
 										<ul className="w-full flex flex-col gap-1 lg:gap-2">
 											{books.map((book, index) => (
 												<li className="mt-2 flex text-sm lg:text-base flex-row flex-wrap gap-1 lg:gap-2">
-													<p>"{book.title}"</p>
-													<p className="font-medium">- {book.author}</p>
+													<p className="font-grotta">"{book.title}"</p>
+													<p className="font-medium font-grotta">
+														- {book.author}
+													</p>
 												</li>
 											))}
 										</ul>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import seyi from "../../assets/seyi.svg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const About = () => {
 	const controlsH4 = useAnimation();
@@ -63,16 +64,21 @@ const About = () => {
 					initial="hidden"
 					animate={controlsP}
 					transition={{ duration: 1, delay: 0.4 }}
-					className="text-blue dark:text-white font-light text-sm md:text-base lg:text-base">
-					My journey as a Frontend Engineer has been a rollercoaster ride, full
-					of exhilarating highs and humbling lows. More often than not, though,
-					I find myself riding the peaks, constantly pushing the envelope of
-					what’s possible. Think of me as your go-to tech artist, a UX
-					visionary, and a JavaScript sorcerer. Day and Night, I transform the
-					digital void into vibrant, engaging realities with my PROJECTS and
-					countless lines of code. I take pride in turning abstract binary into
-					dynamic, user-centric experiences that captivate and delight
-					stakeholders.
+					className="text-blue dark:text-white font-light text-sm md:text-base lg:text-lg">
+					My journey as a <span className="font-medium">Frontend Engineer</span>{" "}
+					has been a rollercoaster ride, full of exhilarating highs and humbling
+					lows. More often than not, though, I find myself riding the peaks,
+					constantly pushing the envelope of what’s possible. Think of me as
+					your go-to tech artist, a UX visionary, and a JavaScript sorcerer. Day
+					and Night, I transform the digital void into vibrant, engaging
+					realities with my{" "}
+					<Link
+						to={"/projects"}
+						className="underline underline-offset-4 underline-thick">
+						PROJECTS
+					</Link>{" "}
+					and countless lines of code. I take pride in turning abstract ideas
+					into dynamic, user-centric experiences that delight stakeholders.
 				</motion.p>
 				<motion.div
 					variants={variantsP}
@@ -83,7 +89,7 @@ const About = () => {
 						onClick={() => {
 							window.open("https://linkedin.com/in/theseyipeters");
 						}}
-						className="flex gap-x-[5px] items-center text-green-2 dark:text-green-1 font-medium py-2 hover:underline">
+						className="flex gap-x-[5px] items-center text-green-2 dark:text-green-1 font-medium py-2 hover:underline text-sm md:text-base lg:text-lg">
 						LinkedIn{" "}
 						<svg
 							width="14"

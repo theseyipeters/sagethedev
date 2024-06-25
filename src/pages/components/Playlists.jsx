@@ -14,7 +14,7 @@ const Playlists = () => {
 						alt=""
 					/>
 				</div>
-				<p className="text-sm md:text-base lg:text-base">
+				<p className="text-sm md:text-base lg:text-lg">
 					A mix of my dangerously interesting taste in music... Enjoy!
 				</p>
 			</div>

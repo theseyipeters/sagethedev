@@ -23,7 +23,7 @@ const Unfiltered = ({ isDarkMode }) => {
 						<h1 className="text-green-2 dark:text-green-1 text-[25px] md:text-[35px] lg:text-[45px] font-medium">
 							Unfiltered opinions about me
 						</h1>
-						<p>
+						<p className="text-sm md:text-base lg:text-lg">
 							I believe in transparency and authenticity, which is why I'm
 							proudly showcasing unedited testimonials to provide you with a
 							real insight into what it's like to collaborate with me.{" "}
@@ -33,7 +33,7 @@ const Unfiltered = ({ isDarkMode }) => {
 			</div>
 
 			<div className="hidden lg:block">
-				<div className=" pt-[100px] pb-[150px] h-[500px] flex flex-row gap-y-[40px] overflow-scroll">
+				<div className=" pt-[100px] pb-[150px] h-[500px] flex flex-row gap-y-[40px]">
 					<div className="opinion-container">
 						<Opinion
 							isDarkMode={isDarkMode}
@@ -74,7 +74,7 @@ const Unfiltered = ({ isDarkMode }) => {
 							position="Sr. Software Engineer"
 							company="GTCO - Dar es Salaam, Tanzania"
 							comment={
-								"Seyi's expertise and dedication were once again evident as he contributed significantly to the project's success. His effective communication and teamwork were crucial in meeting our goals. Seyi Peters is a highly skilled, dependable, and collaborative developer who would be an asset to any team."
+								"Seyi's expertise and dedication is evident as he contributed significantly to our project's success. His effective communication and teamwork were crucial in meeting our goals. Seyi Peters is a highly skilled, dependable, and collaborative developer who would be an asset to any team."
 							}
 							profileImg={arnold}
 							isClient={true}
@@ -83,8 +83,8 @@ const Unfiltered = ({ isDarkMode }) => {
 				</div>
 			</div>
 			<div className="lg:hidden">
-				<div className="pt-[100px] pb-[150px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] h-fit flex flex-col gap-y-[40px] overflow-scroll">
-					<div className="opinion-container2 flex flex-col gap-10 h-fit mt-[150px] overflow-scroll">
+				<div className="pt-[10px] pb-[10px] px-[30px] md:px-[50px] lg:px-[100px] 2xl:px-[120px] h-fit flex flex-col gap-y-[40px] overflow-scroll">
+					<div className="opinion-container2 flex flex-col gap-10 h-fit mt-[50px] overflow-scroll">
 						<Opinion2
 							isDarkMode={isDarkMode}
 							firstName="Eliezer"

@@ -54,7 +54,7 @@ export default function ResumeHero({ isDarkMode }) {
 						</h1>
 					</div>
 					<div className="w-full">
-						<p className="text-base lg:text-[18px]">
+						<p className="text-base lg:text-[18px] font-grotta">
 							I am a versatile <b>Frontend Developer</b> with a foundation in
 							<b> Electrical Engineering</b> from the University of Ilorin. My
 							multifaceted career spans roles as a <b>Community Manager</b>,
@@ -86,7 +86,7 @@ export default function ResumeHero({ isDarkMode }) {
 						</h1>
 					</div>
 					<div className="w-full">
-						<p className="text-base lg:text-[18px]">
+						<p className="text-base lg:text-[18px] font-grotta">
 							I have worked with companies like <b>Crafter</b>,{" "}
 							<b>Scrum Master Africa</b>, <b>OnePipe</b>, <b>Genesys</b>, and
 							<b> Nerdzfactory</b>, holding a degree in Electrical and
@@ -136,11 +136,15 @@ export default function ResumeHero({ isDarkMode }) {
 						</h1>
 					</div>
 					<div className="w-full text-left">
-						<p className="text-base lg:text-[18px]">Software Engineer</p>
-						<p className="text-base lg:text-[18px]">
+						<p className="text-base lg:text-[18px] font-grotta">
+							Software Engineer
+						</p>
+						<p className="text-base lg:text-[18px] font-grotta">
 							Technical Product Manager
 						</p>
-						<p className="text-base lg:text-[18px]">Frontend Engineer</p>
+						<p className="text-base lg:text-[18px] font-grotta">
+							Frontend Engineer
+						</p>
 					</div>
 				</div>
 				{/* <CTA isDarkMode={isDarkMode} /> */}
