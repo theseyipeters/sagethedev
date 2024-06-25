@@ -37,7 +37,7 @@ const Landing = ({ isDarkMode }) => {
 					yPercent: "1000",
 					opacity: 0,
 					duration: 1,
-					// delay: 0.5,
+					delay: 0.1,
 				})
 				.from("#animate-logo-span", {
 					yPercent: "1000",
@@ -48,17 +48,32 @@ const Landing = ({ isDarkMode }) => {
 				.to("#animate-logo-span", {
 					width: "40%",
 					duration: 2,
-					delay: 2,
+					delay: 1,
 				})
-				// .to("#animate-logo-span", {
-				// 	width: 20,
-				// 	delay: 2,
-				// })
 				.to(["#animate-logo", "#animate-logo-span"], {
-					// yPercent: "1000",
 					duration: 1,
 					opacity: 0,
-					delay: 2,
+					delay: 0.01,
+				})
+				.to(["#animate-logo", "#animate-logo-span"], {
+					duration: 1,
+					opacity: 1,
+					delay: 0.01,
+				})
+				.to(["#animate-logo", "#animate-logo-span"], {
+					duration: 1,
+					opacity: 0,
+					delay: 0.01,
+				})
+				.to(["#animate-logo", "#animate-logo-span"], {
+					duration: 1,
+					opacity: 1,
+					delay: 0.01,
+				})
+				.to(["#animate-logo", "#animate-logo-span"], {
+					duration: 1,
+					opacity: 0,
+					delay: 0.5,
 				})
 				.to("#intro-slider", {
 					xPercent: "100",
@@ -98,7 +113,7 @@ const Landing = ({ isDarkMode }) => {
 				className="h-screen fixed overflow-hidden w-full bg-radial top-0 left-0 z-50 flex gap-5 items-center justify-center">
 				<span
 					id="animate-logo-span"
-					className="h-[20px] w-[20px] lg:h-[40px] lg:w-[40px] bg-radial2 rounded-full"></span>
+					className="h-[20px] w-[20px] lg:h-[30px] lg:w-[30px] bg-radial2 rounded-full"></span>
 				<AnimatedLogo />
 			</div>
 			<div

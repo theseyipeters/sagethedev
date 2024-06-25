@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import resumePDF from "../../files/resume-dark.pdf";
+// import resumePDF from "../../files/resume-dark.pdf";
 import StgIcon from "../../svgs/StgIcon";
 import ToggleSwitch from "../../svgs/ToggleSwitch";
 import ToggleSwitch2 from "../../svgs/ToggleSwitch2";
@@ -73,7 +73,7 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 									key={index}
 									to={item.link}
 									// onClick={handleDownloadResume}
-									className="cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500">
+									className="font-grotta cursor-pointer hover:text-green-1 dark:hover:text-white underline-thick transition duration-500">
 									{item.name}
 								</Link>
 							))}
@@ -133,7 +133,7 @@ const NavbarResume = ({ setDarkMode, isDarkMode }) => {
 									<Link
 										key={index}
 										to={item.link}
-										className="cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
+										className="font-grotta cursor-pointer hover:text-green-1 dark:hover:text-white transition duration-500">
 										{item.name}
 									</Link>
 								))}

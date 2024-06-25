@@ -11,9 +11,10 @@ import About from "./pages/about/About";
 import NavbarAbout from "./pages/components/NavbarAbout";
 import NavbarContact from "./pages/components/NavbarContact";
 import Contact from "./pages/contact/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
-	const [isDarkMode, setIsDarkMode] = useState(false);
+	const [isDarkMode, setIsDarkMode] = useState(true);
 
 	const darkMode = () => {
 		setIsDarkMode(!isDarkMode);
@@ -35,6 +36,7 @@ function App() {
 	return (
 		<div className="w-full">
 			<BrowserRouter>
+				<ScrollToTop />
 				<div className={`${isDarkMode ? "dark" : ""}`}>
 					<div className="fixed top-0 w-full z-50">
 						<Navbars
