@@ -74,7 +74,7 @@ const Unfiltered = ({ isDarkMode }) => {
 							position="Sr. Software Engineer"
 							company="GTCO - Dar es Salaam, Tanzania"
 							comment={
-								"Seyi's expertise and dedication were once again evident as he contributed significantly to the project's success. His effective communication and teamwork were crucial in meeting our goals. Seyi Peters is a highly skilled, dependable, and collaborative developer who would be an asset to any team."
+								"Seyi's expertise and dedication is evident as he contributed significantly to our project's success. His effective communication and teamwork were crucial in meeting our goals. Seyi Peters is a highly skilled, dependable, and collaborative developer who would be an asset to any team."
 							}
 							profileImg={arnold}
 							isClient={true}
