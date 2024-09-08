@@ -19,11 +19,10 @@ import { Tooltip } from "react-tooltip";
 import gsap, { snap } from "gsap";
 import ScrollToTop from "../svgs/ScrollToTop";
 import AnimatedLogo from "../svgs/AnimatedLogo";
-import { get, set } from "idb-keyval";
 
 const Landing = ({ isDarkMode }) => {
 	const [showScrollToTop, setShowScrollToTop] = useState(false);
-	const [isAnimated, setIsAnimated] = useState(false);
+	const [isAnimated, setIsAnimated] = useState(null);
 	const comp = useRef(null);
 
 	useEffect(() => {
