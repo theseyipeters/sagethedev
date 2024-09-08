@@ -9,6 +9,7 @@ export default function Project({
 	toolsArray,
 	imgSrc,
 	link,
+	inspired,
 	isDarkMode,
 }) {
 	const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +25,7 @@ export default function Project({
 		<div
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className="relative w-full lg:w-[600px] h-[400px] lg:h-[600px] font-grotta rounded-xl">
+			className="relative w-full lg:w-full xl:max-w-[1400px] h-[900px] lg:h-[600px] font-grotta rounded-xl">
 			{isLoading ? (
 				<div
 					className={`loader h-[400px] ${
@@ -56,6 +57,7 @@ export default function Project({
 						<p className="text-[10px] md:text-xs lg:text-base w-[90%]">
 							{projectDescription}
 						</p>
+						{inspired && <p>Inspired by: {inspired}</p>}
 						<div className="my-2 flex flex-row gap-3 flex-wrap">
 							{toolsArray.map((tool, index) => (
 								<span

@@ -8,11 +8,14 @@ import alt2 from "../../assets/alt2.svg";
 import ndz from "../../assets/ndz.svg";
 import genesys from "../../assets/genesys.svg";
 import genesys2 from "../../assets/genesys2.svg";
+import crafter from "../../assets/crafter.svg";
+import crafter2 from "../../assets/crafter2.svg";
 import txe from "../../assets/txe.svg";
+import onepipe from "../../assets/onepipe.png";
 
 const Experiences = ({ isDarkMode }) => {
-	const images = [sma, genesys, ndz, alt, txe];
-	const imagess = [sma2, genesys2, ndz, alt2, txe];
+	const images = [sma, genesys, ndz, alt, onepipe, crafter];
+	const imagess = [sma2, genesys2, ndz, alt2, onepipe, crafter2];
 
 	const controlsH4 = useAnimation();
 	const controlsP = useAnimation();
