@@ -14,8 +14,8 @@ import txe from "../../assets/txe.svg";
 import onepipe from "../../assets/onepipe.png";
 
 const Experiences = ({ isDarkMode }) => {
-	const images = [sma, genesys, ndz, alt, onepipe, crafter];
-	const imagess = [sma2, genesys2, ndz, alt2, onepipe, crafter2];
+	const images = [crafter, onepipe, sma, alt, genesys, ndz];
+	const imagess = [crafter2, onepipe, sma2, alt2, genesys2, ndz];
 
 	const controlsH4 = useAnimation();
 	const controlsP = useAnimation();
