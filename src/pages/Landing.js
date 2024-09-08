@@ -19,71 +19,88 @@ import { Tooltip } from "react-tooltip";
 import gsap, { snap } from "gsap";
 import ScrollToTop from "../svgs/ScrollToTop";
 import AnimatedLogo from "../svgs/AnimatedLogo";
+import { get, set } from "idb-keyval";
 
 const Landing = ({ isDarkMode }) => {
 	const [showScrollToTop, setShowScrollToTop] = useState(false);
+	const [isAnimated, setIsAnimated] = useState(false);
 	const comp = useRef(null);
 
-	useLayoutEffect(() => {
-		let ctx = gsap.context(() => {
-			const t1 = gsap.timeline();
+	useEffect(() => {
+		const animated = localStorage.getItem("isAnimated");
 
-			t1.from("#intro-slider", {
-				xPercent: "-100",
-				duration: 1,
-				delay: 0,
-			})
-				.from("#animate-logo", {
-					yPercent: "1000",
-					opacity: 0,
-					duration: 1,
-					delay: 0.1,
-				})
-				.from("#animate-logo-span", {
-					yPercent: "2000",
-					opacity: 0,
-					duration: 1,
-					// delay: 0.5,
-				})
-				.to("#animate-logo-span", {
-					width: "40%",
-					duration: 2,
-					delay: 1,
-				})
-				.to(["#animate-logo", "#animate-logo-span"], {
-					duration: 1,
-					opacity: 0,
-					delay: 0.01,
-				})
-				.to(["#animate-logo", "#animate-logo-span"], {
-					duration: 1,
-					opacity: 1,
-					delay: 0.01,
-				})
-				.to(["#animate-logo", "#animate-logo-span"], {
-					duration: 1,
-					opacity: 0,
-					delay: 0.01,
-				})
-				.to(["#animate-logo", "#animate-logo-span"], {
-					duration: 1,
-					opacity: 1,
-					delay: 0.01,
-				})
-				.to(["#animate-logo", "#animate-logo-span"], {
-					duration: 1,
-					opacity: 0,
-					delay: 0.5,
-				})
-				.to("#intro-slider", {
-					xPercent: "100",
-					duration: 1,
-					delay: 0.3,
-				});
-		}, comp);
-
-		return () => ctx.revert();
+		if (animated === null) {
+			setIsAnimated(false);
+		} else {
+			setIsAnimated(animated);
+		}
 	}, []);
+
+	useLayoutEffect(() => {
+		if (isAnimated === false) {
+			let ctx = gsap.context(() => {
+				const t1 = gsap.timeline();
+
+				t1.from("#intro-slider", {
+					xPercent: "-100",
+					duration: 1,
+					delay: 0,
+				})
+					.from("#animate-logo", {
+						yPercent: "1000",
+						opacity: 0,
+						duration: 1,
+						delay: 0.1,
+					})
+					.from("#animate-logo-span", {
+						yPercent: "2000",
+						opacity: 0,
+						duration: 1,
+						// delay: 0.5,
+					})
+					.to("#animate-logo-span", {
+						width: "40%",
+						duration: 2,
+						delay: 1,
+					})
+					.to(["#animate-logo", "#animate-logo-span"], {
+						duration: 1,
+						opacity: 0,
+						delay: 0.01,
+					})
+					.to(["#animate-logo", "#animate-logo-span"], {
+						duration: 1,
+						opacity: 1,
+						delay: 0.01,
+					})
+					.to(["#animate-logo", "#animate-logo-span"], {
+						duration: 1,
+						opacity: 0,
+						delay: 0.01,
+					})
+					.to(["#animate-logo", "#animate-logo-span"], {
+						duration: 1,
+						opacity: 1,
+						delay: 0.01,
+					})
+					.to(["#animate-logo", "#animate-logo-span"], {
+						duration: 1,
+						opacity: 0,
+						delay: 0.5,
+					})
+					.to("#intro-slider", {
+						xPercent: "100",
+						duration: 1,
+						delay: 0.3,
+					})
+					.then(() => {
+						localStorage.setItem("isAnimated", true);
+					});
+			}, comp);
+
+			return () => ctx.revert();
+		}
+	}, [isAnimated]);
 
 	const scrollToTop = () => {
 		scroll.scrollToTop();
@@ -108,14 +125,16 @@ const Landing = ({ isDarkMode }) => {
 		<div
 			className="relative"
 			ref={comp}>
-			<div
-				id="intro-slider"
-				className="h-screen fixed overflow-hidden w-full bg-radial2 top-0 left-0 z-50 flex gap-5 items-center justify-center text-green-2">
-				<span
-					id="animate-logo-span"
-					className="h-[20px] w-[20px] lg:h-[30px] lg:w-[30px] bg-radial rounded-full"></span>
-				<AnimatedLogo />
-			</div>
+			{!isAnimated && (
+				<div
+					id="intro-slider"
+					className="h-screen fixed overflow-hidden w-full bg-radial2 top-0 left-0 z-50 flex gap-5 items-center justify-center text-green-2">
+					<span
+						id="animate-logo-span"
+						className="h-[20px] w-[20px] lg:h-[30px] lg:w-[30px] bg-radial rounded-full"></span>
+					<AnimatedLogo />
+				</div>
+			)}
 			<div
 				id="homepage"
 				className="bg-lightblue dark:bg-blue relative w-full h-fit max-h-fit overflow-hidden">

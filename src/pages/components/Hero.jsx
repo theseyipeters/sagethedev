@@ -9,7 +9,7 @@ import Sagethedev from "../../svgs/Sagethedev";
 import Sagethedev2 from "../../svgs/Sagethedev2";
 
 const Hero = ({ isDarkMode }) => {
-	const [whatsappURL, setWhatsappURL] = useState("https://wa.me/2348038564918");
+	const [whatsappURL, setWhatsappURL] = useState("https://wa.me/2348148548054");
 	const [size, setSize] = useState(180);
 
 	const handleResize = () => {

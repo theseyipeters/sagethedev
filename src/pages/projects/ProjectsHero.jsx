@@ -28,7 +28,7 @@ export default function ProjectsHero({ isDarkMode }) {
 			</div>
 
 			<main className="w-full text-white items-center justify-center  flex mt-2 lg:mt-[50px]">
-				<div className="flex gap-6 flex-wrap mx-auto items-center justify-center">
+				<div className="flex flex-col gap-10 w-full mx-auto items-center justify-center">
 					<Project
 						projectTitle={"Common"}
 						projectDescription={
@@ -39,6 +39,7 @@ export default function ProjectsHero({ isDarkMode }) {
 							"https://i.ibb.co/D1bG8Zy/copy-70-F90528-4-B4-E-4844-B3-AA-9-DD8-AF76231-A.gif"
 						}
 						toolsArray={["React", "Tailwind", "Nextjs", "Context"]}
+						inspired={"Adenekan Wondeful"}
 					/>
 					<Project
 						projectTitle={"Crafter AI"}
@@ -49,7 +50,23 @@ export default function ProjectsHero({ isDarkMode }) {
 						imgSrc={
 							"https://i.ibb.co/Np51sXd/copy-7680-EC6-F-6951-41-C4-897-C-36-DFABB5-D900.gif"
 						}
-						toolsArray={["React", "Zustand", "Nextjs", "Stripe API"]}
+						toolsArray={[
+							"React",
+							"Typescript",
+							"Redux",
+							"Nextjs",
+							"Stripe API",
+						]}
+					/>
+					<Project
+						projectTitle={"Rando"}
+						projectDescription={
+							"Rando is a robust, programmatically-driven mock data generator that produces structured JSON outputs based on user-defined input parameters. It leverages contextual information, such as geographical location or provider-specific constraints, to tailor the mock data accordingly. By taking advantage of a Provider context—which could represent elements like country, regulatory requirements, or localized data norms—Rando dynamically adjusts its output to generate realistic, scenario-appropriate mock data."
+						}
+						imgSrc={
+							"https://i.ibb.co/C1qpT1m/copy-F878029-E-CAF0-4869-92-D6-034-F422-D4545.gif"
+						}
+						toolsArray={["React", "Redux"]}
 					/>
 					<Project
 						projectTitle={`TxE Summit 2023`}
@@ -61,16 +78,6 @@ export default function ProjectsHero({ isDarkMode }) {
 						imgSrc={
 							"https://i.ibb.co/3Sg91hH/copy-DA849-B43-E086-49-C4-A9-B3-275-D92-FFF879.gif"
 						}
-					/>
-
-					<Project
-						projectTitle={"Vitals"}
-						// link={"https://vitalz.vercel.app"}
-						projectDescription={
-							"Vitals provides users with a system that helps manage medical records and automate clinical workflow with optimal security measures."
-						}
-						imgSrc={"https://i.ibb.co/rdK15fH/vitals.gif"}
-						toolsArray={["React", "Redux", "EtherJS"]}
 					/>
 				</div>
 			</main>
