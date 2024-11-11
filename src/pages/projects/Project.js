@@ -25,7 +25,7 @@ export default function Project({
 		<div
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className="relative w-full lg:w-full xl:max-w-[1400px] h-[900px] lg:h-[600px] font-grotta rounded-xl">
+			className="relative w-full lg:w-full xl:max-w-[1400px] h-[400px] lg:h-[600px] font-grotta rounded-xl">
 			{isLoading ? (
 				<div
 					className={`loader h-[400px] ${
