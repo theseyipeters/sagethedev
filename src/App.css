@@ -1,13 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 * {
 	scroll-behavior: smooth;
 	@apply transition-colors duration-300;
-	font-family: "Hanken Grotesk";
+	font-family: "Lexend";
+	letter-spacing: -0.5px;
+}
+
+* {
+	scrollbar-width: none; /* For Firefox */
+	-ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+	display: none;
 }
 
 body {
 	transition: background-color 0.5s, color 0.5s;
+	overscroll-behavior: none;
 }
 p {
 	letter-spacing: "-1px";
@@ -34,34 +48,39 @@ body.dark-mode {
 
 @font-face {
 	font-family: "Grotta";
-	src: url(/src/fonts/Grotta-Trial-Regular.otf);
+	src: url(/public/fonts/Grotta-Trial-Regular.otf);
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Grotta";
-	src: url(/src/fonts/Grotta-Trial-Medium.otf);
+	src: url(/public/fonts/Grotta-Trial-Medium.otf);
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Grotta";
-	src: url(/src/fonts/Grotta-Trial-Bold.otf);
+	src: url(/public/fonts/Grotta-Trial-Bold.otf);
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Grotta";
-	src: url(/src/fonts/Grotta-Trial-Light.otf);
+	src: url(/public/fonts/Grotta-Trial-Light.otf);
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: "Grotta";
-	src: url(/src/fonts/Grotta-Trial-Semibold.otf);
+	src: url(/public/fonts/Grotta-Trial-Semibold.otf);
 	font-weight: 600;
+}
+@font-face {
+	font-family: "Vogalis";
+	src: url(/public/fonts/Vogalis.ttf);
+	font-weight: 400;
 }
 
 section {
