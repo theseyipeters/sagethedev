@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				grotta: ["Grotta-Trial", "Inter"],
+				vogalis: ["Vogalis"],
 			},
 			colors: {
 				white: "#cecece",

@@ -2,6 +2,8 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { Route, Routes, BrowserRouter, useLocation } from "react-router-dom";
 import Landing from "./pages/Landing";
+import "@radix-ui/themes/styles.css";
+import { Theme, ThemePanel } from "@radix-ui/themes";
 import Projects from "./pages/projects/Projects";
 import NavbarLanding from "./pages/components/NavbarLanding";
 import NavbarProjects from "./pages/components/NavbarProjects";
@@ -35,39 +37,43 @@ function App() {
 
 	return (
 		<div className="w-full">
-			<BrowserRouter>
-				<ScrollToTop />
-				<div className={`${isDarkMode ? "dark" : ""}`}>
-					<div className="fixed top-0 w-full z-50">
-						<Navbars
-							isDarkMode={isDarkMode}
-							setDarkMode={darkMode}
-						/>
+			<Theme>
+				<BrowserRouter>
+					<ScrollToTop />
+					<div className={`${isDarkMode ? "dark" : ""}`}>
+						<div className="fixed top-0 w-full z-50">
+							<Navbars
+								isDarkMode={isDarkMode}
+								setDarkMode={darkMode}
+							/>
+						</div>
+						<Routes>
+							<Route
+								path="/"
+								element={<Landing isDarkMode={isDarkMode} />}
+							/>
+							<Route
+								path="/projects"
+								element={<Projects isDarkMode={isDarkMode} />}
+							/>
+							<Route
+								path="/resume"
+								element={<Resume isDarkMode={isDarkMode} />}
+							/>
+							<Route
+								path="/about"
+								element={<About isDarkMode={isDarkMode} />}
+							/>
+							<Route
+								path="/contact"
+								element={<Contact isDarkMode={isDarkMode} />}
+							/>
+						</Routes>
 					</div>
-					<Routes>
-						<Route
-							path="/"
-							element={<Landing isDarkMode={isDarkMode} />}
-						/>
-						<Route
-							path="/projects"
-							element={<Projects isDarkMode={isDarkMode} />}
-						/>
-						<Route
-							path="/resume"
-							element={<Resume isDarkMode={isDarkMode} />}
-						/>
-						<Route
-							path="/about"
-							element={<About isDarkMode={isDarkMode} />}
-						/>
-						<Route
-							path="/contact"
-							element={<Contact isDarkMode={isDarkMode} />}
-						/>
-					</Routes>
-				</div>
-			</BrowserRouter>
+				</BrowserRouter>
+
+				{/* <ThemePanel /> */}
+			</Theme>
 		</div>
 	);
 }
@@ -99,10 +105,12 @@ function Navbars({ isDarkMode, setDarkMode }) {
 			);
 		case "/projects":
 			return (
-				<NavbarProjects
-					isDarkMode={isDarkMode}
-					setDarkMode={setDarkMode}
-				/>
+				// <NavbarProjects
+				// 	isDarkMode={isDarkMode}
+				// 	setDarkMode={setDarkMode}
+				// />
+
+				<></>
 			);
 		case "/":
 		default:
