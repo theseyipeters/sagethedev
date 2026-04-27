@@ -126,7 +126,7 @@ export const projects2 = [
 	
 		positions: projectPositions[0],
 	
-		bg: "#ffffff", // deep calm tone (can tweak to your brand)
+		bg: "#ffffff", 
 	},
 	{
 		id: 2,
