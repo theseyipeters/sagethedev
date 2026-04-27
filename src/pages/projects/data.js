@@ -87,6 +87,83 @@ const projectPositions = [
 
 export const projects2 = [
 	{
+		id: 8,
+		projectTitle: "Guidde",
+		projectDescription:
+			"Guidde is a faith-based productivity platform that helps users generate structured prayer points from personal thoughts, stay consistent with prayer through streaks, and engage in guided spiritual journeys via shared prayer plans. It simplifies how people pray by combining AI-assisted prayer generation with community-driven experiences.",
+	
+		link: "https://guidde.app",
+	
+		imgSrc2: [
+			{
+				img: "/images/projects/guidde/1.png",
+				position: { top: "-10vh", left: "-5%" },
+			},
+			{
+				img: "/images/projects/guidde/2.png",
+				position: { top: "15vh", left: "40%" },
+			},
+			{
+				img: "/images/projects/guidde/3.png",
+				position: { top: "30vh", left: "75%" },
+			},
+			{
+				img: "/images/projects/guidde/4.png",
+				position: { top: "50vh", left: "5%" },
+			},
+		],
+	
+		features: [
+			"AI-powered prayer point generation from personal inputs",
+			"Scripture-backed prayers for deeper spiritual guidance",
+			"Prayer streak tracking to build consistency",
+			"Public & private prayer plans for individual or group journeys",
+			"Shareable prayer plans to pray with friends and communities",
+			"Clean, distraction-free prayer experience",
+		],
+	
+		toolsArray: ["React", "Next.js", "Tailwind", "TypeScript", "AI APIs"],
+	
+		positions: projectPositions[0],
+	
+		bg: "#ffffff", // deep calm tone (can tweak to your brand)
+	},
+	{
+		id: 2,
+		projectTitle: "Beatslot",
+		projectDescription:
+			"Beatslot is the go-to platform for beat makers to showcase, sell, and license their beats effortlessly. With the rise of Afrobeats and global music trends, Beatslot bridges the gap between producers and artists looking for the perfect sound.",
+		link: "https://beatslot-website.vercel.app",
+
+		imgSrc2: [
+			{
+				img: "/images/projects/beatslot/hero-light.svg",
+				position: { top: "-10vh", left: "-5%" },
+			},
+			{
+				img: "/images/projects/beatslot/cover.svg",
+				position: { top: "15vh", left: "40%" },
+			},
+			{
+				img: "/images/projects/beatslot/beatslotGif.gif",
+				position: { top: "30vh", left: "75%" },
+			},
+			{
+				img: "/images/projects/beatslot/e-commerce.svg",
+				position: { top: "50vh", left: "5%" },
+			},
+		],
+		features: [
+			"Seamless beat uploads & previews",
+			"Secure licensing & transactions",
+			"Artist-producer collaboration tools",
+			"A growing community of music creatives",
+		],
+		toolsArray: ["React", "Tailwind", "Nextjs", "Context"],
+		positions: projectPositions[0],
+		bg: "#790C0B",
+	},
+	{
 		id: 1,
 		projectTitle: "zeeh africa",
 		projectDescription:
@@ -124,41 +201,7 @@ export const projects2 = [
 		positions: projectPositions[1],
 		bg: "#4F55E3",
 	},
-	{
-		id: 2,
-		projectTitle: "Beatslot",
-		projectDescription:
-			"Beatslot is the go-to platform for beat makers to showcase, sell, and license their beats effortlessly. With the rise of Afrobeats and global music trends, Beatslot bridges the gap between producers and artists looking for the perfect sound.",
-		link: "https://beatslot-website.vercel.app",
-
-		imgSrc2: [
-			{
-				img: "/images/projects/beatslot/hero-light.svg",
-				position: { top: "-10vh", left: "-5%" },
-			},
-			{
-				img: "/images/projects/beatslot/cover.svg",
-				position: { top: "15vh", left: "40%" },
-			},
-			{
-				img: "/images/projects/beatslot/beatslotGif.gif",
-				position: { top: "30vh", left: "75%" },
-			},
-			{
-				img: "/images/projects/beatslot/e-commerce.svg",
-				position: { top: "50vh", left: "5%" },
-			},
-		],
-		features: [
-			"Seamless beat uploads & previews",
-			"Secure licensing & transactions",
-			"Artist-producer collaboration tools",
-			"A growing community of music creatives",
-		],
-		toolsArray: ["React", "Tailwind", "Nextjs", "Context"],
-		positions: projectPositions[0],
-		bg: "#790C0B",
-	},
+	
 	{
 		id: 6,
 		projectTitle: "Crafter AI",
